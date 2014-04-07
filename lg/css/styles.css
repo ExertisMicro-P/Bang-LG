@@ -1,8 +1,8 @@
 /* 
 
-Project Name: MicroP - Sony 
+Project Name: MicroP - Nokia 
 Author: Farhan Farrukh 
-Date: 2014-03-27 
+Date: 2014-04-07 
 
 */
 
@@ -706,7 +706,8 @@ ol, ul {
 /** THEME
 ===================================*/
 .bx-wrapper .bx-viewport {
-  width: 990px; }
+  width: 990px;
+  height: 2640px !important; }
 
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
@@ -871,13 +872,11 @@ iframe#twitter-widget-0 {
 
 ul.products-list {
   list-style: none;
-  padding-left: 10px;
   margin: 0; }
-  ul.products-list li {
-    padding-right: 1em;
-    text-indent: -.7em; }
-    ul.products-list li .bullet--margin {
-      margin-left: 10px !important; }
+  ul.products-list li .bullet--margin {
+    padding-left: 20px !important;
+    display: block;
+    margin-top: -15px; }
   ul.products-list li:before {
     content: "\2022";
     color: #c50037; }

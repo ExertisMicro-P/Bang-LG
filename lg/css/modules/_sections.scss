@@ -16,14 +16,14 @@ iframe#twitter-widget-0{
 }
 
 ul.products-list {
-    list-style: none;
-    padding-left:10px;
-    margin:0;
+ 	list-style: none;
+    //padding-left:30px;
+    margin:0; 
 	li { 
-    	padding-right: 1em; 
-    	text-indent: -.7em;
     	.bullet--margin {
-			margin-left:10px !important;
+			padding-left:20px !important; 
+			display: block;
+			margin-top: -15px;
 		}
 	}
 
