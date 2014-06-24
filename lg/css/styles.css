@@ -2,7 +2,7 @@
 
 Project Name: MicroP - Nokia 
 Author: Farhan Farrukh 
-Date: 2014-04-07 
+Date: 2014-06-24 
 
 */
 
@@ -599,6 +599,7 @@ ol, ul {
   content: "\e602"; }
 
 .lgBtn {
+  behavior: url(/lg/js/pie/PIE.php);
   position: relative;
   width: auto;
   height: 30px;
@@ -705,9 +706,20 @@ ol, ul {
 
 /** THEME
 ===================================*/
+.lg-compare .bx-wrapper {
+  position: relative;
+  margin: 0 80px 60px !important;
+  max-width: 840px !important;
+  padding: 0;
+  *zoom: 1; }
+
+.lg-compare .bx-wrapper img {
+  max-width: 100%;
+  display: block; }
+
 .bx-wrapper .bx-viewport {
   width: 990px;
-  height: 2640px !important; }
+  height: 2900px !important; }
 
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
@@ -718,7 +730,7 @@ ol, ul {
 /* LOADER */
 .bx-wrapper .bx-loading {
   min-height: 50px;
-  background: url(/samsungBrochure/images/bx_loader.gif) center center no-repeat white;
+  background: url(/lg/images/bx_loader.gif) center center no-repeat white;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -764,11 +776,19 @@ ol, ul {
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
   left: 10px;
-  background: url(/samsungBrochure/images/controls.png) no-repeat 0 -32px; }
+  background: url(/lg/images/controls.png) no-repeat 0 -32px; }
 
 .bx-wrapper .bx-next {
   right: 10px;
-  background: url(/samsungBrochure/images/controls.png) no-repeat -43px -32px; }
+  background: url(/lg/images/controls.png) no-repeat -43px -32px; }
+
+.lg-compare .bx-wrapper .bx-prev {
+  left: -35px;
+  background: url(/sony/images/controls.png) no-repeat 0 -32px; }
+
+.lg-compare .bx-wrapper .bx-next {
+  right: -35px;
+  background: url(/sony/images/controls.png) no-repeat -43px -32px; }
 
 .bx-wrapper .bx-prev:hover {
   background-position: 0 0; }
@@ -780,6 +800,15 @@ ol, ul {
   position: absolute;
   top: 50%;
   margin-top: -16px;
+  outline: 0;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  z-index: 9999; }
+
+.lg-compare .bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 2%;
   outline: 0;
   width: 32px;
   height: 32px;
@@ -799,7 +828,7 @@ ol, ul {
   width: 10px;
   height: 11px;
   outline: 0;
-  background: url(/samsungBrochure/images/controls.png) -86px -11px no-repeat;
+  background: url(/lg/images/controls.png) -86px -11px no-repeat;
   margin: 0 3px; }
 
 .bx-wrapper .bx-controls-auto .bx-start:hover,
@@ -812,7 +841,7 @@ ol, ul {
   width: 9px;
   height: 11px;
   outline: 0;
-  background: url(/samsungBrochure/images/controls.png) -86px -44px no-repeat;
+  background: url(/lg/images/controls.png) -86px -44px no-repeat;
   margin: 0 3px; }
 
 .bx-wrapper .bx-controls-auto .bx-stop:hover,
@@ -845,6 +874,7 @@ ol, ul {
   padding: 10px; }
 
 .lg-circile {
+  behavior: url(/lg/js/pie/PIE.php);
   height: 180px;
   width: 180px;
   border-radius: 100px;
@@ -881,6 +911,42 @@ ul.products-list {
     content: "\2022";
     color: #c50037; }
 
+.logos_grad {
+  background: #bfbfbf;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #bfbfbf 0%, #f9f9f9 2%, #f9f9f9 53%, #ededed 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bfbfbf), color-stop(2%, #f9f9f9), color-stop(53%, #f9f9f9), color-stop(100%, #ededed));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #bfbfbf 0%, #f9f9f9 2%, #f9f9f9 53%, #ededed 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #bfbfbf 0%, #f9f9f9 2%, #f9f9f9 53%, #ededed 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #bfbfbf 0%, #f9f9f9 2%, #f9f9f9 53%, #ededed 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #bfbfbf 0%, #f9f9f9 2%, #f9f9f9 53%, #ededed 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bfbfbf', endColorstr='#ededed',GradientType=0 );
+  /* IE6-9 */ }
+
+.logos_grad-alternate {
+  background: #f9f9f9;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f9f9f9 0%, #f9f9f9 1%, #f9f9f9 54%, #dcd9d9 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9f9f9), color-stop(1%, #f9f9f9), color-stop(54%, #f9f9f9), color-stop(100%, #dcd9d9));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f9f9f9 0%, #f9f9f9 1%, #f9f9f9 54%, #dcd9d9 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #f9f9f9 0%, #f9f9f9 1%, #f9f9f9 54%, #dcd9d9 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #f9f9f9 0%, #f9f9f9 1%, #f9f9f9 54%, #dcd9d9 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #f9f9f9 0%, #f9f9f9 1%, #f9f9f9 54%, #dcd9d9 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#dcd9d9',GradientType=0 );
+  /* IE6-9 */ }
+
 .drag--headings {
   padding: 10px;
   color: #c50037;
@@ -915,15 +981,15 @@ ul.products-list {
   .drag .drag--connectivity {
     height: 280px; }
   .drag .drag--dimensions {
-    height: 50px; }
+    height: 60px; }
   .drag .drag--sensors {
-    height: 80px; }
+    height: 90px; }
   .drag .drag--messaging {
-    height: 40px; }
+    height: 60px; }
   .drag .drag--music {
-    height: 10px; }
+    height: 30px; }
   .drag .drag--other-feature {
-    height: 20px; }
+    height: 520px; }
 
 .drag-active {
   padding: 20px;
@@ -1136,3 +1202,7 @@ ul.products-list {
   vertical-align: 75%;
   line-height: 5px;
   font-size: 8px; }
+
+.feature_thumb {
+  width: 100px;
+  padding: 10px; }

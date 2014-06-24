@@ -36,9 +36,22 @@
 /** THEME
 ===================================*/
 
+.lg-compare .bx-wrapper {
+	position: relative;
+	margin: 0 80px 60px !important;
+	max-width:840px !important;
+	padding: 0;
+	*zoom: 1;
+}
+
+.lg-compare .bx-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+
 .bx-wrapper .bx-viewport {
 	width:990px;
-	height:2640px !important;
+	height:2900px !important;
 }
 
 .bx-wrapper .bx-pager,
@@ -52,7 +65,7 @@
 
 .bx-wrapper .bx-loading {
 	min-height: 50px;
-	background: url(/samsungBrochure/images/bx_loader.gif) center center no-repeat #fff;
+	background: url(/lg/images/bx_loader.gif) center center no-repeat #fff;
 	height: 100%;
 	width: 100%;
 	position: absolute;
@@ -106,12 +119,22 @@
 
 .bx-wrapper .bx-prev {
 	left: 10px;
-	background: url(/samsungBrochure/images/controls.png) no-repeat 0 -32px;
+	background: url(/lg/images/controls.png) no-repeat 0 -32px;
 }
 
 .bx-wrapper .bx-next {
 	right: 10px;
-	background: url(/samsungBrochure/images/controls.png) no-repeat -43px -32px;
+	background: url(/lg/images/controls.png) no-repeat -43px -32px;
+}
+
+.lg-compare .bx-wrapper .bx-prev {
+	left: -35px;
+	background: url(/sony/images/controls.png) no-repeat 0 -32px;
+}
+
+.lg-compare .bx-wrapper .bx-next {
+	right: -35px;
+	background: url(/sony/images/controls.png) no-repeat -43px -32px;
 }
 
 .bx-wrapper .bx-prev:hover {
@@ -126,6 +149,16 @@
 	position: absolute;
 	top: 50%;
 	margin-top: -16px;
+	outline: 0;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	z-index: 9999;
+}
+
+.lg-compare .bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 2%;
 	outline: 0;
 	width: 32px;
 	height: 32px;
@@ -149,7 +182,7 @@
 	width: 10px;
 	height: 11px;
 	outline: 0;
-	background: url(/samsungBrochure/images/controls.png) -86px -11px no-repeat;
+	background: url(/lg/images/controls.png) -86px -11px no-repeat;
 	margin: 0 3px;
 }
 
@@ -164,7 +197,7 @@
 	width: 9px;
 	height: 11px;
 	outline: 0;
-	background: url(/samsungBrochure/images/controls.png) -86px -44px no-repeat;
+	background: url(/lg/images/controls.png) -86px -44px no-repeat;
 	margin: 0 3px;
 }
 
@@ -205,6 +238,7 @@
 }
 
 .lg-circile {
+	behavior: url(/lg/js/pie/PIE.php);
 	height:180px;
 	width:180px;
 	border-radius:100px;
