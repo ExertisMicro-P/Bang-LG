@@ -2,7 +2,7 @@
 
 Project Name: MicroP - Nokia 
 Author: Farhan Farrukh 
-Date: 2014-06-24 
+Date: 2014-07-30 
 
 */
 
@@ -717,7 +717,7 @@ ol, ul {
   max-width: 100%;
   display: block; }
 
-.bx-wrapper .bx-viewport {
+.compare .bx-wrapper .bx-viewport {
   width: 990px;
   height: 2900px !important; }
 
