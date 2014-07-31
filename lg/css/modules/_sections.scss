@@ -3,11 +3,18 @@
 		margin-left:0px;
 		margin-right:0px;
 		padding-bottom:0px !important;
+		margin-top:40px;
+		margin-bottom:40px;
 	}
 	.news-section {
 		padding-bottom: 40px;
 		border-bottom: 3px solid #a3a3a3;
 		width:100%;
+	}
+	.home-section {
+		margin-left:0px;
+		margin-right:0px;
+		padding-bottom:0px !important;
 	}
 }
 
@@ -17,8 +24,10 @@ iframe#twitter-widget-0{
 
 ul.products-list {
  	list-style: none;
-    //padding-left:30px;
+    padding-left:30px;
     margin:0; 
+    margin-top:20px;
+    margin-bottom:20px;    
 	li { 
     	.bullet--margin {
 			padding-left:20px !important; 
@@ -56,4 +65,15 @@ ul.products-list {
 	background: linear-gradient(to bottom,  #f9f9f9 0%,#f9f9f9 1%,#f9f9f9 54%,#dcd9d9 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#dcd9d9',GradientType=0 ); /* IE6-9 */
 }
+
+.bg-section-color {
+	background-color:#ededed;
+	overflow:hidden;
+}
+
+.alt-bg-section-color { 
+	background-color:#dcd9d9;
+	overflow:hidden;
+}
+
 
