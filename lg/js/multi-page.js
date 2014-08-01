@@ -1,4 +1,3 @@
-
 var currentUser = whoami();
 
 //------------------------------------
@@ -10,23 +9,23 @@ var currentUser = whoami();
 function initContent() {
 
 	var landingPage = querystring_lookup('p');
-	landingPage = ((typeof (landingPage) !== "undefined" && landingPage !== null) ? landingPage : "home");
+	landingPage = ((typeof(landingPage) !== "undefined" && landingPage !== null) ? landingPage : "home");
 
-	ajaxMSPage(setMSPage(landingPage), ajaxWrapper);		// check QS & load content
+	ajaxMSPage(setMSPage(landingPage), ajaxWrapper); // check QS & load content
 
 	// prefix image paths outside ajax area
-	$(contentWrapper).find('img').each(function () {
+	$(contentWrapper).find('img').each(function() {
 		var thisSRC = checkSRC($(this).attr('src'));
 		$(this).attr('src', thisSRC);
 	});
 
 	// repair anchor tags outside ajax area
-	$(contentWrapper + ' a').each(function () {
+	$(contentWrapper + ' a').each(function() {
 		var thisHREF = checkHREF($(this).attr('href'));
-		$(this).attr("href", thisHREF);																													// update path
-		if ($(this).hasClass('act')) {																													// add click through event
-			$(this).on('click', function () {
-				createGAEvent(projectName, 'Click-Though', $(this).attr("href"), inSandbox);				// analytics clickthrough event
+		$(this).attr("href", thisHREF); // update path
+		if ($(this).hasClass('act')) { // add click through event
+			$(this).on('click', function() {
+				createGAEvent(projectName, 'Click-Though', $(this).attr("href"), inSandbox); // analytics clickthrough event
 			});
 		}
 	});
@@ -53,17 +52,17 @@ function initContent() {
 //
 function setMSPage(requestedPage) {
 
-	var targetPage = ((typeof (requestedPage) !== "undefined" && requestedPage !== null) ? requestedPage : "home");
+	var targetPage = ((typeof(requestedPage) !== "undefined" && requestedPage !== null) ? requestedPage : "home");
 
 	var aHREF = targetPage;
 	var aHASH = '';
 	var arrHREF;
-	if (aHREF.indexOf('#') >= 0) { 																								// does the HREF contain a # value?
+	if (aHREF.indexOf('#') >= 0) { // does the HREF contain a # value?
 		arrHREF = aHREF.split('#');
 		aHREF = arrHREF[0];
 		aHASH = '#' + arrHREF[1];
 	}
-	var contentURL = prefixURL + aHREF + '.html' + aHASH;	
+	var contentURL = prefixURL + aHREF + '.html' + aHASH;
 
 	// analytics event
 	createGAEvent(projectName, "Load-Page", targetPage, inSandbox);
@@ -77,13 +76,13 @@ function ajaxMSPage(ajaxURL, targetDiv) {
 
 	$.ajax({
 		global: true,
-		cache: false,																																// Change for live
-		url: ajaxURL,																																// path to file
+		cache: false, // Change for live
+		url: ajaxURL, // path to file
 		dataType: 'html',
-		success: function (data) {
+		success: function(data) {
 			$('#ms-loading').fadeIn();
-			$(targetDiv).html(data);																									// load content area
-			initPage();																																// call function included in ajaxed content, used to assign plugins, listeners etc.
+			$(targetDiv).html(data); // load content area
+			initPage(); // call function included in ajaxed content, used to assign plugins, listeners etc.
 
 			// prefix image paths
 			$(targetDiv).find('img').each(function() {
@@ -94,10 +93,10 @@ function ajaxMSPage(ajaxURL, targetDiv) {
 			// repair anchor tags
 			$(targetDiv + ' a').each(function() {
 				var thisHREF = checkHREF($(this).attr('href'));
-				$(this).attr("href", thisHREF);																													// update path
-				if ($(this).hasClass('act')) {																													// add click through event
-					$(this).on('click', function(){
-						createGAEvent(projectName, 'Click-Through', $(this).attr("href"), inSandbox);				// analytics clickthrough event
+				$(this).attr("href", thisHREF); // update path
+				if ($(this).hasClass('act')) { // add click through event
+					$(this).on('click', function() {
+						createGAEvent(projectName, 'Click-Through', $(this).attr("href"), inSandbox); // analytics clickthrough event
 					});
 				}
 
@@ -108,7 +107,7 @@ function ajaxMSPage(ajaxURL, targetDiv) {
 			var aHREF = ajaxURL;
 			var aHASH = '';
 			var arrHREF;
-			if (aHREF.indexOf('#') >= 0) { 																								// does the HREF contain a # value?
+			if (aHREF.indexOf('#') >= 0) { // does the HREF contain a # value?
 				arrHREF = aHREF.split('#');
 				aHREF = arrHREF[0];
 				aHASH = '#' + arrHREF[1];
@@ -123,27 +122,35 @@ function ajaxMSPage(ajaxURL, targetDiv) {
 
 // listener for navigation, if the link has the appropriate data value the ajax load is called
 //
-$(contentWrapper).on('click', 'a', function (e) {
+$(contentWrapper).on('click', 'a', function(e) {
 
-	if (typeof ($(this).data('target-content')) !== "undefined") {
+	if (typeof($(this).data('target-content')) !== "undefined") {
 
-		ajaxMSPage(setMSPage($(this).data('target-content')), '#ms-content');
+		if ($(this).hasClass = "external") {
+			ajaxMSPage(setMSPage($(this).data('target-content')), '#ms-content');
+		} else {
+			ajaxMSPage(setMSPage($(this).data('target-content')), '#ms-content');
+		}
 
 		// flag active menu link
 		if ($(this).parents('div:first').attr('id') == 'ms-nav') {
 			$(contentWrapper + ' #ms-nav a').removeClass('active');
 			$(this).addClass('active');
 		}
-	}
 
-	else if ($(this).attr('href') == "#") {
+		// Added this piece of code to add / remove active class to nav menu when the page is re-directed to a different page through other mean of navigation. e.g clicking a button on the page.
+		if ($(this).attr('id') == 'device_menu' || $(this).attr('id') == 'compare_menu' || $(this).attr('id') == 'b2b_menu' || $(this).attr('id') == 'promotions_menu' || $(this).attr('id') == 'news_menu') {
+			$(contentWrapper + ' #ms-nav a').removeClass('active');
+			$(contentWrapper + ' #ms-nav a.' + $(this).attr('id')).addClass('active');
+		}
+	} else if ($(this).attr('href') == "#") {
 		e.preventDefault();
 	}
 });
 
 // analytics event - LoadModal
 //
-$(contentWrapper).on('click', '.ajax-fancybox', function (event) {
+$(contentWrapper).on('click', '.ajax-fancybox', function(event) {
 	createGAEvent(projectName, "View-Item", $(this).attr('href'), inSandbox);
 });
 
@@ -153,7 +160,7 @@ $(contentWrapper).on('click', '.ajax-fancybox', function (event) {
 //
 var nav = $('#ms-nav');
 var scrolled = false;
-$(window).scroll(function () {
+$(window).scroll(function() {
 	if (0 < $(window).scrollTop() && !scrolled) {
 		nav.addClass('sticky-nav');
 		scrolled = true;
@@ -174,20 +181,19 @@ $(window).scroll(function () {
 
 function checkHREF(thisHREF) {
 
-	if (typeof (thisHREF) != undefined) {   
-	       // function content              
-	}   
+	if (typeof(thisHREF) != undefined) {
+		// function content              
+	}
 }
 
-function checkSRC(thisSRC){
+function checkSRC(thisSRC) {
 
 	var imgSRC = thisSRC;
 
-	if (inSandbox != true) {																																			// prefix image paths -  (deals with iCom interference)
+	if (inSandbox != true) { // prefix image paths -  (deals with iCom interference)
 		imgSRC = replaceAll(imgSRC, '/ImagesPortal/UK/localisation/4/', '');
 		imgSRC = prefixURL + imgSRC;
-	}
-	else {																																												// standard prefix
+	} else { // standard prefix
 		imgSRC = prefixURL + imgSRC;
 	}
 
