@@ -2,7 +2,7 @@
 
 Project Name: MicroP - LG 
 Author: Farhan Farrukh 
-Date: 2014-08-01 
+Date: 2014-08-11 
 
 */
 
@@ -709,6 +709,7 @@ ol, ul {
 .lg-compare .bx-wrapper {
   position: relative;
   margin: 0 80px 60px !important;
+  margin-bottom: 0px !important;
   max-width: 840px !important;
   padding: 0;
   *zoom: 1; }
@@ -719,7 +720,7 @@ ol, ul {
 
 .compare .bx-wrapper .bx-viewport {
   width: 990px;
-  height: 2710px !important; }
+  height: 2860px !important; }
 
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
