@@ -91,21 +91,30 @@ function ajaxMSPage(ajaxURL, targetDiv) {
 
 // listener for navigation, if the link has the appropriate data value the ajax load is called
 //
-$(contentWrapper).on('click', 'a', function (e) {
+$(contentWrapper).on('click', 'a', function(e) {
 
-	if (typeof($(this).data('target-content')) !== 'undefined') {
+  if (typeof($(this).data('target-content')) !== "undefined") {
 
-		ajaxMSPage(setMSPage($(this).data('target-content')), '#ms-content');
+    if ($(this).hasClass = "external") {
+      ajaxMSPage(setMSPage($(this).data('target-content')), '#ms-content');
+    } else {
+      ajaxMSPage(setMSPage($(this).data('target-content')), '#ms-content');
+    }
 
-		// flag active menu link
-		if ($(this).parents('div:first').attr('id') == 'ms-nav') {
-			$(contentWrapper + ' #ms-nav a').removeClass('active');
-			$(this).addClass('active');
-		}
-	}
-	else if ($(this).attr('href') == "#") {
-		e.preventDefault();
-	}
+    // flag active menu link
+    if ($(this).parents('div:first').attr('id') == 'ms-nav') {
+      $(contentWrapper + ' #ms-nav a').removeClass('active');
+      $(this).addClass('active');
+    }
+
+    // Added this piece of code to add / remove active class to nav menu when the page is re-directed to a different page through other mean of navigation. e.g clicking a button on the page.
+    if ($(this).attr('id') == 'device_menu' || $(this).attr('id') == 'compare_menu' || $(this).attr('id') == 'b2b_menu' || $(this).attr('id') == 'promotions_menu' || $(this).attr('id') == 'news_menu') {
+      $(contentWrapper + ' #ms-nav a').removeClass('active');
+      $(contentWrapper + ' #ms-nav a.' + $(this).attr('id')).addClass('active');
+    }
+  } else if ($(this).attr('href') == "#") {
+    e.preventDefault();
+  }
 });
 
 // analytics event - LoadModal
