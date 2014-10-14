@@ -1,0 +1,50 @@
+$swatch_diameter: 14px;
+
+@mixin swatch($pri_colour, $secondary_colour: '') {
+  background-color: $pri_colour;
+
+  @if $secondary_colour != '' {
+    &:after {
+      position: relative;
+      left: $swatch_diameter / 2;
+      display: block;
+      content: '';
+      height: $swatch_diameter;
+      width: $swatch_diameter / 2;
+      border-radius: 0 ($swatch_diameter / 2) ($swatch_diameter / 2) 0;
+      background-color: $secondary_colour;
+      transform-origin: 0 50%;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.available-colours {
+  float: none; // for some reason all <divs> are floated? this makes life difficult.
+}
+
+.available-colours__title {
+  text-transform: uppercase;
+}
+
+.available-colours__swatches {
+  margin: 20px 0;
+
+  li {
+    display: inline-block;
+    height: $swatch_diameter;
+    width: $swatch_diameter;
+    margin-right: 4px;
+    border-radius: 50%;
+
+    span {
+      // hide the label from display, but not screenreaders
+      @extend .visuallyhidden;
+    }
+  }
+}
+
+.black          { @include swatch(#000); }
+.white          { @include swatch(#fff); }
+.gold           { @include swatch(#DAA520); }
+.silver         { @include swatch(#c0c0c0); }
