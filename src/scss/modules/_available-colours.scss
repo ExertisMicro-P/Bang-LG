@@ -42,9 +42,9 @@ $swatch_diameter: 14px;
       @extend .visuallyhidden;
     }
   }
-}
 
-.black          { @include swatch(#000); }
-.white          { @include swatch(#fff); }
-.gold           { @include swatch(#DAA520); }
-.silver         { @include swatch(#c0c0c0); }
+  .black          { @include swatch(#000); }
+  .white          { @include swatch(#fff); }
+  .gold           { @include swatch(#DAA520); }
+  .silver         { @include swatch(#c0c0c0); }
+}
