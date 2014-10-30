@@ -1,0 +1,58 @@
+.b2b-section {
+  margin: 0;
+  padding: 60px 0;
+  background: $section-background;
+  color: #fff;
+
+  // alternate alignment (left/right flip)
+  &:nth-child(even) {
+    background: #dcd9d9;
+
+    > .b2b-section__image,
+    > .b2b-section__details {
+      float: right;
+      margin-right: 40px;
+      margin-left: 0;
+    }
+  }
+}
+
+.b2b-section__details {
+  float: left;
+  width: 480px;
+  margin-left: 40px;
+
+  // this shouldn't really be nested, but neccessary to override
+  // `.container_25 h2` selector
+  .b2b-section__title {
+    margin-top: 0;
+    height: auto; // fixes issue with exertis height:initial in IE 9
+    color: $lg-red;
+  }
+
+  // this shouldn't really be nested, but neccessary to override
+  // `.grid_25 p` selector
+  .b2b-section__tagline {
+    margin: 20px 0;
+    color: $lg-red;
+  }
+}
+
+.b2b-section__body {
+  font-size: 14px;
+  line-height: 1.42em; // 20px / 14px
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.b2b-section__image {
+  float: left;
+  width: 390px;
+  margin-left: 40px;
+
+  img {
+    max-width: 100%;
+  }
+}

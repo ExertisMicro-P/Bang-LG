@@ -1,0 +1,81 @@
+{{!-- this really needs to be refactored into an html table when we have the time --}}
+<div class="comparison-table grid_25 alpha">
+  <h2 class="comparison-table__attribute" style="top:165px;">Screen</h2>
+  <h2 class="comparison-table__attribute" style="top:315px;">Battery</h2>
+  <h2 class="comparison-table__attribute" style="top:450px;">Processor</h2>
+  <h2 class="comparison-table__attribute" style="top:620px;">Camera</h2>
+  <h2 class="comparison-table__attribute" style="top:790px;">OS</h2>
+  <h2 class="comparison-table__attribute" style="top:905px;">Memory</h2>
+  <h2 class="comparison-table__attribute" style="top:1040px;">Network</h2>
+  <h2 class="comparison-table__attribute" style="top:1230px;">Connectivity</h2>
+  <h2 class="comparison-table__attribute" style="top:1435px;">Dimensions</h2>
+  <h2 class="comparison-table__attribute" style="top:1550px;">Sensors</h2>
+  <h2 class="comparison-table__attribute" style="top:1720px;">Messaging</h2>
+  <h2 class="comparison-table__attribute" style="top:1855px;">Music</h2>
+  <h2 class="comparison-table__attribute" style="top:1980px;">Other Features</h2>
+
+  <div class="js-comparison-slider">
+    {{#each compare.products}}
+      <div class="drag comparison-table__product">
+        <div class="comparison-table__handle">
+          <img class="comparision-table__product-image" alt="Image of {{title}}"
+            title="Drag to compare" src="{{image}}" />
+          <h3 class="comparision-table__product-title">{{title}}</h3>
+        </div>
+        {{#each attributes}}
+          <p class="comparision-table__product-attribute comparision-table__product-attribute--{{@key}}">
+            {{{this}}}
+          </p>
+        {{/each}}
+      </div>
+    {{/each}}
+  </div>
+</div>
+
+<!-- scripts -->
+<script type="text/javascript">
+
+function initPage() {
+
+  head.load(prefixURL + "js/jquery.bxslider.js", function () {
+
+    var slider;
+
+    var initSlider = function(startPosition) {
+      // default to 0 if no start position provided
+      startPosition = typeof startPosition !== 'undefined' ? startPosition : 0;
+
+      return $('.js-comparison-slider').bxSlider({
+        speed: 400,
+        infiniteLoop: false,
+        hideControlOnEnd: true,
+        pager: false,
+        maxSlides: 6,
+        startSlide: startPosition,
+        moveSlides: 1,
+        slideWidth: 120,
+        slideMargin: 10
+      });
+    };
+
+    // start the slider
+    slider = initSlider();
+
+    $(".js-comparison-slider" ).sortable({
+      axis: "x",
+      opacity: 0.5,
+      tolerance: "pointer",
+      placeholder: "comparison-table__drag-placeholder",
+      handle: '.comparison-table__handle',
+      update: function (e, ui) {
+        // destroy and then re-initialise the slider (in the same place) when
+        // the sort order changes
+        var currentSliderPosition = slider.getCurrentSlide();
+        slider.destroySlider();
+        slider = initSlider(currentSliderPosition);
+      }
+    });
+  });
+}
+
+</script>

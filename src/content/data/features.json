@@ -1,0 +1,64 @@
+{
+  "features": {
+    "knock_on": {
+      "text": "KNOCKon",
+      "image": "images/features/knockon_basic.png"
+    },
+    "knock_code": {
+      "text": "KNOCKcode",
+      "image": "images/features/knockCode.png"
+    },
+    "qual_hd": {
+      "text": "Qual HD",
+      "image": "images/features/icon-Quad-HD-Display.png"
+    },
+    "ois_laser": {
+      "text": "OIS+ Laser AF",
+      "image": "images/features/icon-Laser-Auto-Focus.png"
+    },
+    "snapdragon": {
+      "text": "Qualcomm&reg; Snapdragon&trade;",
+      "image": "images/features/icon-Qualcomm-Snapdragon.png"
+    },
+    "quick_memo": {
+      "text": "Quick Memo",
+      "image": "images/features/QuickMemo-MC.png"
+    },
+    "snapdragon_mc": {
+      "text": "Qualcomm&reg; Snapdragon&trade; MC",
+      "image": "images/features/Qualcomm-Snapdragon-mc.png"
+    },
+    "hd_ips": {
+      "text": "Full HD IPS",
+      "image": "images/features/Full-HD-IPS-mc.png"
+    },
+    "ois": {
+      "text": "Optical Image Stablizer",
+      "image": "images/features/icon-OIS-Camera.png"
+    },
+    "smart_battery": {
+      "text": "Smartly Powered Battery 3500mAh Li Polymer",
+      "image": "images/features/3500mAh-Li-Polymer-Smartly-Powered-Battery.png"
+    },
+    "ips": {
+      "text": "IPS",
+      "image": "images/features/True-colour-IPS-mc.png"
+    },
+    "kitkat": {
+      "text": "Android 4.4 KitKat",
+      "image": "images/features/icon-Android-KitKat.png"
+    },
+    "qpair": {
+      "text": "Qpair",
+      "image": "images/features/qpair.png"
+    },
+    "4g_lte": {
+      "text": "4G LTE",
+      "image": "images/features/4G_LTE.png"
+    },
+    "android_wear": {
+      "text": "Android Wear&trade;",
+      "image": "images/features/Android-Wear.png"
+    }
+  }
+}

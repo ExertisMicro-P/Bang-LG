@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id": "gwatch",
+      "title": {
+        "text": "LG G Watch",
+        "image": "images/titles/GWatchHeading.png"
+      },
+      "tagline": "LG Defines the Smartwatch",
+      "description": "Powered by Android Wear&trade;, the LG G Watch brings the very latest mobile technology to your wrist. With an intuitive, comfortable to wear design, delivering all the information you need to know. Life will truly be more simple and convenient.",
+      "attributes": [
+        "Lightweight, comfortable design",
+        "Always-On 1.65\" IPS Display",
+        "Compatible with Android 4.3+",
+        "400mAh battery",
+        "IP67 Certified water & dust resistant",
+        "Intelligent information when you need it most",
+        "Straight answers to spoken questions"
+      ],
+      "colours": [
+        "Black",
+        "White"
+      ],
+      "link": "#",
+      "video": null,
+      "image": "images/wearables/GWatch.png",
+      "feature_ids": [
+        "android_wear",
+        "snapdragon"
+      ]
+    },
+    {
+      "id": "gwatchr",
+      "title": {
+        "text": "LG G Watch R",
+        "image": "images/titles/GWatchRHeading.png"
+      },
+      "tagline": "Smart Comes Full Circle",
+      "description": "With Android Wear&trade; at its core, the LG G Watch R is the next generation to join the LG wearable's range. Sporting a stunning full circle Plastic OLED display, the LG G Watch R perfectly combines classic watch design with an advanced, easy to use, user interface. Delivering essential information, anytime, anywhere.",
+      "attributes": [
+        "Stunning, Timeless Design",
+        "World's First Full Circle 1.3\" P-OLED Display with sapphire glass protection",
+        "Compatible with Android 4.3+",
+        "High capacity 410mAh battery",
+        "1.2 GHz Qualcomm&reg; Snapdragon&trade; 400",
+        "IP67 Certified water & dust resistant",
+        "Heart Rate Monitor / Barometer / 9-Axis Sensor",
+        "Chronograph Watch Faces",
+        "Smart Notifications and Voice Recognition"
+      ],
+      "colours": [
+        "Black",
+        "White"
+      ],
+      "link": "http://www.exertismicro-p.co.uk/products/SMART-WATCH/LG/p2091749/LG-Other-LG-Products-SMART-WATCH-GW100R.aspx?mscssid=%7B24DC85FF-A7D8-405E-87D8-C988A90C0D48%7D&flNoRedirect=1&referer=/catalogue/catProductList.asp",
+      "video": null,
+      "image": "images/wearables/GWatchR.png",
+      "feature_ids": [
+        "android_wear",
+        "snapdragon"
+      ]
+    }
+  ]
+}

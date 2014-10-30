@@ -1,0 +1,45 @@
+.news-story {
+  margin: 30px 0 0 40px;
+  border-bottom: 3px solid #a3a3a3;
+}
+
+.news-story__details {
+
+  // this shouldn't really be nested, but neccessary to override
+  // `.container_25 h2` selector
+  .news-story__title {
+    margin-top: 0;
+    color: $lg-red;
+  }
+}
+
+.news-story__media {
+  margin-bottom: 20px;
+}
+
+.news-story__body {
+  font-size: 14px;
+  line-height: 1.42em; // 20px / 14px
+
+  p,
+  ul {
+    margin-bottom: 20px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+
+    li {
+      padding-left: 20px;
+      font-size: 14px;
+    }
+
+    li:before {
+      content: "\2022";
+      padding-right: 14px;
+      color: $lg-red;
+    }
+  }
+}

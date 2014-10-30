@@ -1,0 +1,113 @@
+// this really needs to be refactored (with the html) to work as a column
+// sortable html table. we're doing far too much manual work at the moment in
+// order to get this layout to work
+
+.comparison-table {
+  padding-top: 26px;
+  border-top: 4px solid $lg-red;
+
+  // slider theme
+  .bx-wrapper {
+    position: relative;
+    max-width: 840px !important;
+    height: 100%;
+    margin: 0 80px !important;
+    padding: 0;
+
+    .bx-viewport {
+      border: none;
+      background: none;
+      box-shadow: none;
+    }
+
+    .bxslider {
+      padding: 0;
+      margin: 0;
+    }
+
+    .bx-loading {
+      background-image: url('/lg/images/bx_loader.gif');
+    }
+    .bx-controls-direction a {
+      top: 50px;
+    }
+    .bx-prev {
+      left: -40px;
+      background-image: url('/lg/images/controls.png');
+    }
+    .bx-next {
+      right: -40px;
+      background-image: url('/lg/images/controls.png');
+    }
+  }
+
+  // show not be nested, but neccessary for specificity override on headings
+  .comparison-table__attribute {
+    position: absolute;
+    left: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $lg-red;
+  }
+}
+
+.comparison-table__product {
+  float: left;
+  width: 120px;
+  margin: 0 10px;
+  font-size: 12px !important;
+}
+
+.comparison-table__handle {
+  cursor: move;
+  float: none;
+}
+
+.comparision-table__product-title {
+  margin-top: 20px;
+  font-size: 14px !important;
+  font-weight: bold;
+  text-align: center;
+}
+
+.comparision-table__product-image {
+  width: auto;
+  height: 100px;
+  margin: 0 auto;
+}
+
+$attr_line-height: 18px; // makes life here a little easier, but still makes me sad :(
+
+.comparision-table__product-attribute {
+  margin: 70px 0 80px 0;
+  line-height: $attr_line-height;
+}
+
+// we need to set a fixed height on the rows in order for the layout to work.
+// this needs to be updated as the content changes.
+.comparision-table__product-attribute--screen        { height: $attr_line-height * 4; }
+.comparision-table__product-attribute--battery       { height: $attr_line-height * 3; }
+.comparision-table__product-attribute--processor     { height: $attr_line-height * 5; }
+.comparision-table__product-attribute--camera        { height: $attr_line-height * 5; }
+.comparision-table__product-attribute--android       { height: $attr_line-height * 2; }
+.comparision-table__product-attribute--memory        { height: $attr_line-height * 3; }
+.comparision-table__product-attribute--network       { height: $attr_line-height * 6; }
+.comparision-table__product-attribute--connectivity  { height: $attr_line-height * 7; }
+.comparision-table__product-attribute--dimensions    { height: $attr_line-height * 2; }
+.comparision-table__product-attribute--sensors       { height: $attr_line-height * 5; }
+.comparision-table__product-attribute--messaging     { height: $attr_line-height * 3; }
+.comparision-table__product-attribute--music         { height: $attr_line-height * 2; }
+.comparision-table__product-attribute--other-feature { height: $attr_line-height * 16; }
+
+.comparison-table__drag-placeholder {
+  display: block;
+  float: left;
+  width: 112px; // = product width - the border width
+  height: 1200px;
+  padding: 10px;
+  background-color: #fff;
+  border: 4px solid $lg-red;
+  border-radius: 5px;
+}

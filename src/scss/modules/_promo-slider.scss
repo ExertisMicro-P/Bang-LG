@@ -1,0 +1,110 @@
+.promo-slider {
+  position: relative;
+  margin-bottom: 10px;
+  background-color: #dcd9d9;
+  background: linear-gradient(to bottom, $section-background 0%, $section-background 70%, #a7a7a7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$section-background', endColorstr='#a7a7a7', GradientType=0); // IE6-9
+
+  // slider theme
+  .bx-wrapper {
+    padding: 0;
+    margin: 0;
+
+    .bx-viewport {
+      border: none;
+      background: none;
+      box-shadow: none;
+    }
+
+    .bxslider {
+      padding: 0;
+      margin: 0;
+    }
+
+    .bx-loading {
+      background-image: url('/lg/images/bx_loader.gif');
+    }
+    .bx-prev {
+      background-image: url('/lg/images/controls.png');
+    }
+    .bx-next {
+      background-image: url('/lg/images/controls.png');
+    }
+
+    .bx-pager {
+      left: 440px;
+      bottom:20px;
+
+      a {
+        background: $button-background;
+        &:hover  { background: $button-background; }
+        &.active { background: $lg-red; }
+      }
+    }
+  }
+}
+
+.promo-slide {
+  padding: 30px 0;
+  min-height: 410px;
+}
+
+.promo-slide__details {
+  float: right;
+  width: 330px;
+  margin-right: 190px;
+}
+
+.promo-slide__image {
+  float: right;
+  width: 370px;
+  margin-right: 40px;
+
+  img {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+
+.promo-slide__title {
+  height: auto; // fixes issue with exertis height:initial in IE 9
+}
+
+.promo-slide__body {
+  font-size: 14px;
+  line-height: 1.42em; // 20px / 14px
+
+  h3 {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+// off canvas red circle looking thing
+.promo-slide__tagline {
+  position: absolute;
+  top: -30px;
+  right: 5px;
+  width: 180px;
+  height: 180px;
+  padding: 0;
+  background-color: $lg-red;
+  border-radius: 50%;
+
+  span {
+    display: table-cell;
+    width: 120px;
+    height: 180px;
+    padding: 0 30px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+}

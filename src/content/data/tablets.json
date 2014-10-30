@@ -1,0 +1,100 @@
+{
+  "products": [
+    {
+      "id": "gpad7",
+      "title": {
+        "text": "LG G Pad 7.0",
+        "image": "images/titles/GPad7Heading.png"
+      },
+      "tagline": "The Tablet You Take With You",
+      "description": "LG G Pad 7.0 is a tablet that's big enough to accomplish each endeavour and small enough to carry around. Designed to be held in one hand, LG's smallest tablet is an on-the-go entertainment hub that delivers portability, a bright 7.0\" IPS display and impeccable power with its large 4000mAh battery and super-fast Quad-Core processor.",
+      "attributes": [
+        "7.0\" IPS Display",
+        "Android 4.4 KitKat",
+        "Long-lasting 4000mAh battery capacity",
+        "1.2 GHz Quad-Core Processor",
+        "3MP AF Touch & Shoot camera",
+        "MicroSD card slot",
+        "KnockOn/KnockCode&trade;",
+        "QPair, Smart Keyboard and Dual Window"
+      ],
+      "colours": [
+        "Black",
+        "White"
+      ],
+      "link": "http://exertismicro-p.co.uk/catalogue/catProductList.asp?mscssid=&nmOrderBy=1&ttKeyword=LG%20pad%20V400&idCategory=4489",
+      "video": null,
+      "image": "images/tablets/GPad7.png",
+      "feature_ids": [
+        "knock_on",
+        "knock_code",
+        "ips",
+        "qpair",
+        "snapdragon"
+      ]
+    },
+    {
+      "id": "gpad10",
+      "title": {
+        "text": "LG G Pad 10.1",
+        "image": "images/titles/GPad10Heading.png"
+      },
+      "tagline": "Made for Multitasking & Multimedia",
+      "description": "LG G Pad 10.1 is a tablet that makes life simple - multitask and enjoy entertainment on its large and vibrate 10.1\" IPS display and do it all day on its super charged 8000mAh battery. With Dual Window support, it even lets you open two windows on the same screen so you can see and do more.",
+      "attributes": [
+        "Large  10.1\" IPS Display",
+        "Android 4.4 KitKat",
+        "Super Charged 8000mAh battery",
+        "1.2GHz Quad-Core Processor",
+        "5MP FSI with AF Touch & Shoot camera",
+        "MicroSD card slot",
+        "KnockOn/KnockCode&trade;",
+        "QPair, Smart Keyboard and Dual Window"
+      ],
+      "colours": [
+        "Black",
+        "Red"
+      ],
+      "link": "#",
+      "video": null,
+      "image": "images/tablets/GPad10.png",
+      "feature_ids": [
+        "knock_on",
+        "knock_code",
+        "ips",
+        "qpair",
+        "snapdragon"
+      ]
+    },
+    {
+      "id": "gpad8",
+      "title": {
+        "text": "LG G Pad 8.3",
+        "image": "images/titles/GPad8Heading.png"
+      },
+      "tagline": "Not Just Larger, It's Clearer",
+      "description": "Make your whole experience sharper and clearer with LG G Pad's eye catching 8.3\" Full HD IPS display, providing an incredible visual experience with vibrant and clear imagery that shows off every detail, even when zoomed in. With an 8.3\" maximised screen area the LG G Pad allows you to experience virtual edge to edge viewing and, because it is portable, convenient and fits easily in your pocket, you can take the ultimate entertainment performance everywhere you go.",
+      "attributes": [
+        "8.3 inch Full HD IPS display",
+        "4,600 mAh battery",
+        "1.7 GHz Snapdragon&trade; 600 Quad-Core Processor",
+        "5 MP AF / 1.3 MP Camera",
+        "Android 4.4.2 KitKat"
+      ],
+      "colours": [
+        "Black",
+        "White"
+      ],
+      "link": "http://exertismicro-p.co.uk/catalogue/catProductList.asp?mscssid=&nmOrderBy=1&ttKeyword=LG%20pad%20V500&idCategory=4489",
+      "video": "https://www.youtube.com/watch?v=YLsi2-kljAo?rel=0&feature=youtu.be",
+      "image": "images/tablets/GPad8.png",
+      "feature_ids": [
+        "knock_on",
+        "snapdragon",
+        "smart_battery",
+        "hd_ips",
+        "quick_memo"
+      ]
+    }
+  ]
+}

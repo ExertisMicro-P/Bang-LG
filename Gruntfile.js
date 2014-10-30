@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
 
   // load all grunt tasks matching the `grunt-*` pattern
-  require('load-grunt-tasks')(grunt);
+  require('load-grunt-tasks')(grunt, {pattern: ['grunt-*', 'assemble']});
 
   grunt.initConfig({
 
@@ -33,8 +33,8 @@ module.exports = function(grunt) {
         tasks: ['uglify']
       },
       html: {
-        files: ['src/html/**/*.html'],
-        tasks: ['bake']
+        files: 'src/content/**/*',
+        tasks: ['assemble']
       },
       assets: {
         files: ['src/images/**/*', 'src/fonts/**/*', 'src/downloads/**/*'],
@@ -58,7 +58,8 @@ module.exports = function(grunt) {
     // autoprefixer
     autoprefixer: {
       options: {
-        browsers: ['last 2 versions', 'ie 9', 'ios 6', 'android 4']
+        browsers: ['last 2 versions', 'ie 9', 'ios 6', 'android 4'],
+        map: true,
       },
       files: {
         expand: true,
@@ -107,13 +108,22 @@ module.exports = function(grunt) {
       }
     },
 
-    // compile html from includes
-    bake: {
+    // compile html
+    assemble: {
+      options: {
+        layoutdir: 'src/content/layouts',
+        partials: 'src/content/partials/**/*.hbs',
+        data: 'src/content/data/**/*.json',
+        helpers: ['handlebars-helper-partial', 'src/content/helpers/**/*.js']
+      },
       build: {
+        options: {
+          layout: 'default.hbs'
+        },
         files: [{
           expand: true,
-          cwd: 'src/html',
-          src: '*.html',
+          cwd: 'src/content/pages',
+          src: '**/*.{hbs,html}',
           dest: '<%= buildDir %>'
         }]
       }
@@ -197,7 +207,7 @@ module.exports = function(grunt) {
 
   // standard build task, should be run before commiting
   grunt.registerTask('build', ['sass', 'autoprefixer', 'cssmin', 'uglify',
-    'bake', 'rsync:images', 'rsync:fonts', 'rsync:downloads']);
+    'assemble', 'rsync:images', 'rsync:fonts', 'rsync:downloads']);
   
   // recompile the microsite from scratch
   grunt.registerTask('rebuild', ['clean', 'rsync:framework', 'build']);

@@ -1,0 +1,84 @@
+<div class="ms-wrapper lg-microsite">
+  <div class="container_25">
+
+    <div class="header">
+
+      <div id="ms-nav" class="nav">
+
+        {{!-- this has to be in .nav to get multi-page .active to function correctly --}}
+        <h1 class="nav__logo">
+          <a class="nav__link" data-target-content="home" href="#">
+            <img alt="LG - Life's Good" src="images/lg-logo.jpg"/>
+          </a>
+        </h1>
+
+        <ul class="nav__menu">
+          <li class="nav__item">
+            <a class="nav__link" href="#" data-target-content="handsets">Handsets</a></li>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#" data-target-content="tablets">Tablets</a></li>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#" data-target-content="wearables">Wearables</a></li>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#" data-target-content="compare">Compare</a></li>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#" data-target-content="b2b">B2B</a></li>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#" data-target-content="promotions">Promotions</a></li>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#" data-target-content="news">News</a></li>
+          </li>
+        </ul>
+      </div>
+
+    </div><!-- ./header -->
+
+    <!-- content -->
+    <div id="ms-content" style="padding:0px; width:990px;"><!-- loaded via ajax --></div>
+    <a id="hidden-link" href="#" style="display:none;"><p>click me</p></a>
+    <div id="ms-loading"></div>
+  </div>
+</div>
+
+<!-- scripts -->
+<script type="text/javascript">
+<!--
+
+var projectName = "lg";
+var inSandbox = true;
+var contentWrapper = '.ms-wrapper';
+var ajaxWrapper = '#ms-content';
+
+var sandboxURL = '/lg/';
+var liveURL = '/ImagesPortal/UK/localisation/4/microsites/lg/';
+var prefixURL;
+
+prefixURL = (inSandbox) ? prefixURL = sandboxURL : prefixURL = liveURL;
+
+function initProject() {
+  // multi-page microsite content management
+  head.load(prefixURL + "css/multi-page.css");
+  head.load(prefixURL + "css/microsite.css");
+  head.load(prefixURL + "js/jquery.scrollTo.js");
+  head.load(prefixURL + "js/jquery.nav.js");
+  head.load(prefixURL + "js/multi-page.js", function() {
+    initContent();
+  });
+}
+
+// run initProject - externally called if in sandbox
+//
+if (inSandbox != true) {
+  $(document).ready(function () {
+    initProject();
+  });
+}
+
+//-->
+</script>

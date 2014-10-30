@@ -1,0 +1,40 @@
+{
+  "sections": [
+    {
+      "title": "It's All Productivity",
+      "body": "<p>Increasing productivity is central to LG's ethos and LG devices offer a host of unique features. These allow you to work creatively and efficiently so you can be the most productive you can be. This comes from the freedom to work from where you want, when you want. LG uses Android, the world's most popular open source operating  system and the most innovative.</p>",
+      "tagline": "Productivity possibilities are endless with LG.",
+      "image": {
+        "src": "images/b2b/productivity.png",
+        "alt": "Image of two people being productive"
+      }
+    },
+    {
+      "title": "It's All High Tech",
+      "body": "<p>Stretching the possibilities of technology and your mind is LG's goal. As a leader in mobile phone design, LG burn a trail for others to follow. The full HD LG G Flex is the world's first smartphone that is curved both inside and out with a gently arched display and battery. Using the latest and most advanced display technology, Plastic OLED which is less than 1mm thick and uses self-luminous organic materials.</p>",
+      "tagline": "Hardware possibilities are enhanced with LG.",
+      "image": {
+        "src": "images/b2b/alltech.png",
+        "alt": "Image of LG G Flex"
+      }
+    },
+    {
+      "title": "It's All Business",
+      "body": "<p>Bring Your Own Device (BYOD) is an increasingly important part of the enterprise ecosystem, escalating employee productivity through their own choice in technology. But it also brings complications in terms of mobile device management, applications, device and systems integration and heightened security risks.</p><p>LG has worked to help corporates manage a large and varied number of devices, efficiently,  securely and cost consciously.  Businesses can manage configuration and centrally control features and policies.</p>",
+      "tagline": "Possibilities can be yours with LG.",
+      "image": {
+        "src": "images/b2b/business.png",
+        "alt": "Image of the business environment"
+      }
+    },
+    {
+      "title": "It's All Safe",
+      "body": "<p>A major challenge for companies today in developing the mobile office is ensuring proper management and security of company data in a well supported environment while providing convenience and privacy to the user.</p><p>LG's advanced Enterprise Solution gives a secure VPN solution to US Government Security Standard (FIPS 140-2). LG has enhanced the Android Device Policy Manager to offer extended control of the device enabling enterprises to wipe all data or lock the device remotely. LG also secures data sharing amongst colleagues to offer a tailored, secure corporate operating sysrem that looks and behaves the same regardless of the device used.</p>",
+      "tagline": "Securing your possibilities with LG.",
+      "image": {
+        "src": "images/b2b/safe.png",
+        "alt": "Image of a security lock"
+      }
+    }
+  ]
+}

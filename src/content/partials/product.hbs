@@ -1,0 +1,40 @@
+<div id="{{id}}" class="grid_25 fade-in product product--wearable">
+  <div class="product__details">
+    <h2 class="product__title">
+      <img src="{{title.image}}" alt="{{{title.text}}}"/>
+    </h2>
+    <h3 class="product__tagline">{{{tagline}}}</h3>
+    <p class="product__desc">{{{description}}}</p>
+    <ul class="product__attrs">
+      {{#each attributes}}
+        <li>{{{this}}}</li>
+      {{/each}}
+    </ul>
+    {{#if colours}}
+      <div class="available-colours">
+        <h3>Available colours</h3>
+        <ul class="available-colours__swatches">
+          {{#each colours}}
+            <li class="available-colours__swatch available-colours__swatch--{{slugify .}}">
+              <span>{{.}}</span>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+    {{/if}}
+    {{#if link}}
+      <a class="lg-button" href="{{link}}">Find out more</a>
+    {{/if}}
+    {{#if video}}
+      <a class="lg-button js-youtube-lightbox" href="{{video}}">Watch the video</a>
+    {{/if}}
+  </div>
+  <div class="product__image">
+    <img src="{{image}}" alt="Image of {{{title.text}}}"/>
+  </div>
+  <div class="product__features">
+    {{#features feature_ids features}}
+      <img src="{{image}}" alt="{{text}}"/>
+    {{/features}}
+  </div>
+</div>

@@ -1,65 +1,54 @@
-.menu {
-	width:100%;
-	margin-bottom:20px;
+// there's a lot of !important going on in here, but it's neccessary to override
+// the highly specified selectors for #ms-nav & .nav in the multi-page framework 
+
+
+.nav,
+.nav.sticky-nav { // .sticky-nav is a multi-page thing that we don't want
+  position: relative !important;
+  width: 100% !important;
+  margin: 0 !important;
+  background: #fff !important;
 }
 
-.ms-wrapper #ms-nav.sticky-nav {
-	position:relative;
+.nav__logo {
+  float: left;
+  margin: 0 !important;
 }
-.menu #ms-nav {
-	background-color: #ffffff !important;
-	width: 600px;
-	float: right;
+
+.nav__menu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 !important;
+  list-style: none;
 }
-.menu #ms-nav li {
-	margin: 0 0px 0 0;
-	display:inline;
+
+.nav__item {
+  position: relative;
+  display: inline-block;
+  float: left;
+  padding: 0;
+  margin: 0 12px 0 0;
+
+  &:last-child {
+    margin-right: 0 !important;
+  }
 }
-.menu #ms-nav a{
-	color: #666666;
-	display: inline-block;
-	font-size: 16px;
-	padding: 8px 8px;
-	width:100px;
-	text-align:center;
-	text-decoration: none;
-	font-weight: bold;
-	//border-right:1px solid grey;
-	outline:0;
-}
-.nav {
-	ul {
-		float:left;
-		width:100%;
-		padding:0;
-		margin:0;
-		list-style-type:none;
-	}
-	a {
-		font-size:12px;
-		float: left;
-		color:white;
-		text-decoration: none;
-	}
 
-	a.active{
-		color:#c50037 !important;
-		.icon-home {
-			color:#c50037 !important;
-			padding-bottom: 9px !important;
+.nav__link {
+  display: block;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $body-text !important;
+  padding: 6px !important;
+  outline: 0;
 
-		}
-
-
-	}
-	a.home:hover,
-	a:hover {
-		color:#c50037 !important;
-	}
-
-	li {
-		display:inline;
-		margin-left:0px !important;
-	}
+  // can't have BEM name as this class is part of multi-page framework
+  &.active {
+    color: $lg-red !important;
+  }
 }
 

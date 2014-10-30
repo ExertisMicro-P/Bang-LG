@@ -29,22 +29,24 @@ $swatch_diameter: 14px;
 
 .available-colours__swatches {
   margin: 20px 0;
-
-  li {
-    display: inline-block;
-    height: $swatch_diameter;
-    width: $swatch_diameter;
-    margin-right: 4px;
-    border-radius: 50%;
-
-    span {
-      // hide the label from display, but not screenreaders
-      @extend .visuallyhidden;
-    }
-  }
-
-  .black          { @include swatch(#000); }
-  .white          { @include swatch(#fff); }
-  .gold           { @include swatch(#DAA520); }
-  .silver         { @include swatch(#c0c0c0); }
+  padding: 0;
 }
+
+.available-colours__swatch {
+  display: inline-block;
+  height: $swatch_diameter;
+  width: $swatch_diameter;
+  margin-right: 4px;
+  border-radius: 50%;
+
+  span {
+    // hide the label from display, but not screenreaders
+    @extend .visuallyhidden;
+  }
+}
+
+.available-colours__swatch--black  { @include swatch(#000); }
+.available-colours__swatch--white  { @include swatch(#fff); }
+.available-colours__swatch--gold   { @include swatch(#DAA520); }
+.available-colours__swatch--silver { @include swatch(#c0c0c0); }
+.available-colours__swatch--red    { @include swatch(#bd1722); }
