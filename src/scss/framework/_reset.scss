@@ -1,8 +1,12 @@
 // this file is reserved for TRUELY microsite-wide global styles only
+// other than .lg-microsite there should NO classes or IDs in here
 
 .lg-microsite {
   font-family: Ubuntu, Helvetica, Arial, Calibri, sans-serif;
   background-color: #fff;
+
+  // for some reason this seem neccessary to stop us from overlapping the header
+  margin-top: 15px;
 
   h1, .h1,
   h2, .h2,

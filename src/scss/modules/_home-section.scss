@@ -27,7 +27,7 @@
   margin-left: 40px;
 
   // this shouldn't really be nested, but neccessary to override
-  // `.container_25 h2` selector
+  // `.lg-microsite h2` selector
   .home-section__title {
     margin-top: 0;
     height: auto; // fixes issue with exertis height:initial in IE 9

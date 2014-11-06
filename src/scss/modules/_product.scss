@@ -31,13 +31,13 @@
   margin-left: 40px;
 
   // this shouldn't really be nested, but neccessary to override
-  // `.container_25 h2` selector
+  // `.lg-microsite h2` selector
   .product__title {
     margin-top: 0;
   }
 
   // this shouldn't really be nested, but neccessary to override
-  // `.container_25 h3` selector
+  // `.lg-microsite h3` selector
   .product__tagline {
     font-size: 24px;
     color: $lg-red;
@@ -80,7 +80,7 @@
   box-sizing: border-box;
   background: #f9f9f9; // fallback for older browsers
   background: linear-gradient(to bottom, #f9f9f9 0%, #f9f9f9 54%, #d9d9d9 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='$section-background-alt', GradientType=0); // IE6-9
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#d9d9d9', GradientType=0); // IE6-9
 
   img {
     padding: 10px;

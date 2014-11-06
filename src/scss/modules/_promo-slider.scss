@@ -2,8 +2,8 @@
   position: relative;
   margin-bottom: 10px;
   background-color: #dcd9d9;
-  background: linear-gradient(to bottom, $section-background 0%, $section-background 70%, #a7a7a7 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$section-background', endColorstr='#a7a7a7', GradientType=0); // IE6-9
+  background: linear-gradient(to bottom, #ededed 0%, #ededed 70%, #a7a7a7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#a7a7a7', GradientType=0); // IE6-9
 
   // slider theme
   .bx-wrapper {
