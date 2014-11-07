@@ -21,10 +21,13 @@ $swatch_diameter: 14px;
 
 .available-colours {
   float: none; // for some reason all <divs> are floated? this makes life difficult.
-}
 
-.available-colours__title {
-  text-transform: uppercase;
+  // this shouldn't really be nested, but neccessary to override
+  // `.lg-microsite h[X]` selector
+  .available-colours__title {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
 }
 
 .available-colours__swatches {

@@ -1,42 +1,39 @@
-<div class="b2b">
-  <div class="grid_25 alpha omega">
-    <div class="grid_24 alpha push_1">
-      <h1>B2B</h1>
-    </div>
+<div class="b2b grid_25 alpha omega">
+
+  <div class="page-title">
+    <h2 class="h1">B2B</h2>
   </div>
 
-  <div class="main grid_25 alpha fade-in">
-
-    <div class="page-lead">
-      <div class="page-lead__details">
-        <p>Whether you want to get your hands on some of the world's most innovative Android mobile devices, experience ground-breaking technology, or opt for a more entry level product, LG offers a complete range that is easily customisable and delivers on design, performance, and user experience.</p>
-        <p class="page-lead__tagline">Smart and Reliable Solutions</p>
-        <div class="document-download">
-          <div class="document-download__image">
-            <img src="images/b2b/brochure.png" alt="LG Mobile Business Guide 2014" />
-          </div>
-          <div class="document-download__details">
-            <h2 class="document-download__title">LG B2B Brochure</h2>
-            <div class="document-download__desc">Find out how businesses  can be more productive, secure and in control using LG Technology by downloading our free 'LG Mobile Business Guide' brochure.</div>
-            <a class="lg-button" href="http://content.yudu.com/A2urza/ExertisLGMobBus2014/resources/index.htm?referrerUrl=http%3A%2F%2Fwww.exertismicro-p.co.uk%2FcmcPage.asp%3FidPage%3D27521">Download</a>
-          </div>
+  <div class="page-lead">
+    <div class="page-lead__details">
+      <p>Whether you want to get your hands on some of the world's most innovative Android mobile devices, experience ground-breaking technology, or opt for a more entry level product, LG offers a complete range that is easily customisable and delivers on design, performance, and user experience.</p>
+      <p class="page-lead__tagline">Smart and Reliable Solutions</p>
+      <div class="document-download">
+        <div class="document-download__image">
+          <img src="images/b2b/brochure.png" alt="LG Mobile Business Guide 2014" />
+        </div>
+        <div class="document-download__details">
+          <h3 class="document-download__title">LG B2B Brochure</h3>
+          <div class="document-download__desc">Find out how businesses  can be more productive, secure and in control using LG Technology by downloading our free 'LG Mobile Business Guide' brochure.</div>
+          <a class="lg-button" href="http://content.yudu.com/A2urza/ExertisLGMobBus2014/resources/index.htm?referrerUrl=http%3A%2F%2Fwww.exertismicro-p.co.uk%2FcmcPage.asp%3FidPage%3D27521">Download</a>
         </div>
       </div>
     </div>
-
-    {{#each b2b.sections}}
-      <div class="b2b-section grid_25">
-        <div class="b2b-section__details">
-          <h2 class="b2b-section__title">{{title}}</h2>
-          <div class="b2b-section__body">{{{body}}}</div>
-          <p class="b2b-section__tagline">{{tagline}}</p>
-        </div>
-        <div class="b2b-section__image">
-          <img alt="{{image.alt}}" src="{{image.src}}" />
-        </div>
-      </div>
-    {{/each}}
   </div>
+
+  {{#each b2b.sections}}
+    <div class="b2b-section">
+      <div class="b2b-section__details">
+        <h3 class="b2b-section__title">{{title}}</h3>
+        <div class="b2b-section__body">{{{body}}}</div>
+        <p class="b2b-section__tagline">{{tagline}}</p>
+      </div>
+      <div class="b2b-section__image">
+        <img alt="{{image.alt}}" src="{{image.src}}" />
+      </div>
+    </div>
+  {{/each}}
+
 </div>
 
 <!-- scripts -->

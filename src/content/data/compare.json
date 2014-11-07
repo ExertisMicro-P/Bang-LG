@@ -49,11 +49,11 @@
         "android": "Android Wear (Compatible with Android 4.3+)",
         "memory": "512 MB / 4 GB",
         "network": "BT 4.0",
-        "connectivity": "",
+        "connectivity": null,
         "dimensions": "37.9 x 46.5 x 9.95 mm",
         "sensors": "9 Axis (Gyro, Accelerometer, Compass)",
-        "messaging": "",
-        "music": "",
+        "messaging": null,
+        "music": null,
         "other-features": "22mm Changeable Watch Strap, Micro USB on Charging Cradle"
       }
     },
@@ -68,11 +68,11 @@
         "android": "Android Wear",
         "memory": "4GB eMMC / 512MB RAM",
         "network": "BT 4.0",
-        "connectivity": "",
+        "connectivity": null,
         "dimensions": "46.4 x 53.6 x 9.7 mm",
         "sensors": "9-Axis (Gyro, Accelerometer, Compass)",
-        "messaging": "",
-        "music": "",
+        "messaging": null,
+        "music": null,
         "other-features": "Dust & Water Resistant (IP67)"
       }
     },
@@ -167,7 +167,7 @@
         "dimensions": "189.3 x 113.8 x 10.1 mm",
         "sensors": "Accelerometer, Compass",
         "messaging": "Email, Push Mail, IM",
-        "music": "",
+        "music": null,
         "other-features": "QPair&trade; 2.0"
       }
     },
@@ -186,7 +186,7 @@
         "dimensions": "260.9 x 165.9 x 8.95 mm",
         "sensors": "Accelerometer, Compass",
         "messaging": "Email, Push Mail, IM",
-        "music": "",
+        "music": null,
         "other-features": "QPair&trade; 2.0"
       }
     },
@@ -219,11 +219,11 @@
         "camera": "1.3 MP front facing 8 MP rear facing OIS MEMS camera technology",
         "android": "Android 4.4 KitKat",
         "memory": "Internal: 16 GB storage, 2GB RAM",
-        "network": "",
+        "network": null,
         "connectivity": "Dual-band Wi-Fi (2.4G/5G) 802.11 a/b/g/n/nc Bluetooth 4.0",
         "dimensions": "137.84 x 69.17 x 8.59mm",
         "sensors": "Accelerometer, magnetometer, gyroscope, proximity, light, barometer, orientation",
-        "messaging": "",
+        "messaging": null,
         "music": "MP3 player FM radio",
         "other-features": "Wireless charging"
       }

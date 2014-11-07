@@ -1,46 +1,43 @@
-<div class="news">
-  <div class="grid_25 alpha omega">
-    <div class="grid_24 alpha push_1">
-      <h1>News</h1>
-    </div>
+<div class="news grid_25 alpha omega">
+
+  <div class="page-title">
+    <h2 class="h1">News</h2>
   </div>
 
-  <div class="main grid_25 alpha fade-in">
+  <div class="grid_16 alpha">
 
-    <div class="grid_16 alpha">
-
-      {{#each news.stories}}
-        <div class="news-story">
-          <div class="news-story__details">
-            <h2 class="news-story__title">{{title}}</h2>
-            <div class="news-story__media">
-              {{#ifCond media.type '==' 'image'}}
-                <img alt="{{media.alt}}" src="{{media.src}}" />
-              {{/ifCond}}
-              {{#ifCond media.type '==' 'video'}}
-                <iframe width="580" height="315" src="{{media.src}}" frameborder="0" allowfullscreen></iframe>
-              {{/ifCond}}
-            </div>
-            <div class="news-story__body">{{{body}}}</div>
+    {{#each news.stories}}
+      <div class="news-story">
+        <div class="news-story__details">
+          <h3 class="news-story__title">{{title}}</h3>
+          <div class="news-story__media">
+            {{#ifCond media.type '==' 'image'}}
+              <img alt="{{media.alt}}" src="{{media.src}}" />
+            {{/ifCond}}
+            {{#ifCond media.type '==' 'video'}}
+              <iframe width="580" height="315" src="{{media.src}}" frameborder="0" allowfullscreen></iframe>
+            {{/ifCond}}
+          </div>
+          <div class="news-story__body">
+            {{{body}}}
           </div>
         </div>
-      {{/each}}
-
-    </div>
-
-    <div class="grid_9 omega">
-
-      <div class="social-widget">
-        <h2 class="social-widget__title">Facebook</h2>
-        <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FLGMobile&amp;width&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=628558827208960" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:290px;" allowTransparency="true"></iframe>
       </div>
-      {{!-- <div class="social-widget">
-        <h2 class="social-widget__title">Twitter</h2>
-        <a class="twitter-timeline" href="https://twitter.com/LGMobileUK" data-widget-id="449197605591846913">Tweets by @LGMobileUK</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div> --}}
-    </div>
+    {{/each}}
 
+  </div>
+
+  <div class="grid_9 omega">
+
+    <div class="social-widget">
+      <h3 class="social-widget__title">Facebook</h3>
+      <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FLGMobile&amp;width&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=628558827208960" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:290px;" allowTransparency="true"></iframe>
+    </div>
+    {{!-- <div class="social-widget">
+      <h3 class="social-widget__title">Twitter</h3>
+      <a class="twitter-timeline" href="https://twitter.com/LGMobileUK" data-widget-id="449197605591846913">Tweets by @LGMobileUK</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div> --}}
   </div>
   
 </div>

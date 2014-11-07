@@ -55,10 +55,10 @@
         "text": "LG G Pad",
         "image": "images/titles/GPadRangeHeading.png"
       },
-      "tagline": "Tablets Just Right For You",
+      "tagline": "Tablets Just Right for You",
       "body": "<h3>LG G Pad 7.0</h3><p>One-handed portability</p><h3>LG G Pad 8.3</h3><p>Uncompromising screen clarity</p><h3>LG G Pad 10.1</h3><p>Made for Multitasking & Media</p>",
       "internal_link": "tablets",
-      "image": "images/tablets/GPadRange.png"
+      "image": "images/home/GPadRange.png"
     },
     {
       "title": {
@@ -88,33 +88,33 @@
       "body": "<p>Innovation combined with the latest technology, LG's smart and stylish mobile devices offer a unique user experience which can be customised to suit. Discover the full Android range including award winning handsets.</p>",
       "internal_link": "handsets",
       "image": {
-        "src": "images/home/handsets.jpg",
+        "src": "images/home/HandsetsRange.jpg",
         "alt": "Image of LG's handsets"
       }
     },
     {
       "title": "Tablets",
-      "tagline": "TBC",
-      "body": "<p>TBC</p>",
+      "tagline": "Productivity at Your Fingertips",
+      "body": "<p>The LG G Pad puts LG’s most innovative feature for multitasking and productivity at your fingertips, so you can have the power to do it all with application like Qslide, Slide Aside, Life Square, and many others.</p>",
       "internal_link": "tablets",
       "image": {
-        "src": "images/tablets/GPadRange.png",
+        "src": "images/home/GPadRange.png",
         "alt": "Image of LG's G Pad range"
       }
     },
     {
       "title": "Wearables",
-      "tagline": "TBC",
-      "body": "<p>TBC</p>",
+      "tagline": "Stylish and Functional Companions",
+      "body": "<p>LG's stylish and functional wearable range offers a truly integrated experience, providing you with  alerts and health information at a glance, whilst connecting wirelessly  to LG’s most popular smartphones making them the perfect companions.</p>",
       "internal_link": "wearables",
       "image": {
-        "src": "",
+        "src": "images/home/GWatchRange.png",
         "alt": "Image of LG's wearables"
       }
     },
     {
       "title": "B2B",
-      "tagline": "Mobile Devices That Work For You",
+      "tagline": "Mobile Devices That Work for You",
       "body": "<p>With enhanced, technically proven devices, LG offers a complete mobile range with smart and reliable solutions to meet business and customer needs.</p><p>An advanced and customisable user experience can be found throughout the Android range, along with innovative designs and leading hardware.</p>",
       "internal_link": "b2b",
       "image": {

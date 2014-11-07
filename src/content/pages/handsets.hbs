@@ -1,15 +1,13 @@
-<div class="handsets">
-  <div class="grid_25 alpha omega">
-    <div class="grid_24 alpha push_1">
-      <h1>Handsets</h1>
-    </div>
-  </div>
+<div class="handsets grid_25 alpha omega">
 
-  <div class="main grid_25 alpha">
-    {{#each handsets.products}}
-      {{partial 'product' this}}
-    {{/each}}
+  <div class="page-title">
+    <h2 class="h1">Handsets</h2>
   </div>
+  
+  {{#each handsets.products}}
+    {{partial 'product' this}}
+  {{/each}}
+
 </div>
 
 <!-- scripts -->

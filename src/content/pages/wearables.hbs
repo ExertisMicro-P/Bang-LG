@@ -1,15 +1,13 @@
-<div class="wearables">
-  <div class="grid_25 alpha omega">
-    <div class="grid_24 alpha push_1">
-      <h1>Wearables</h1>
-    </div>
-  </div>
+<div class="wearables grid_25 alpha omega">
 
-  <div class="main grid_25 alpha">
-    {{#each wearables.products}}
-      {{partial 'product' this}}
-    {{/each}}
+  <div class="page-title">
+    <h2 class="h1">Wearables</h2>
   </div>
+  
+  {{#each wearables.products}}
+    {{partial 'product' this}}
+  {{/each}}
+
 </div>
 
 <!-- scripts -->

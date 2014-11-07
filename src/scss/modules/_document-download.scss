@@ -17,7 +17,7 @@
   width: 70%;
 
   // this shouldn't really be nested, but neccessary to override
-  // `.lg-microsite h2` selector
+  // `.lg-microsite h[X]` selector
   .document-download__title {
     margin-top: 0;
     font-size: 14px;

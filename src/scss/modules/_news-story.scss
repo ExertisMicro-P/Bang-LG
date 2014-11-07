@@ -6,9 +6,10 @@
 .news-story__details {
 
   // this shouldn't really be nested, but neccessary to override
-  // `.lg-microsite h2` selector
+  // `.lg-microsite h[X]` selector
   .news-story__title {
     margin-top: 0;
+    font-size: 24px;
     color: $lg-red;
   }
 }
@@ -19,7 +20,7 @@
 
 .news-story__body {
   font-size: 14px;
-  line-height: 1.42em; // 20px / 14px
+  line-height: 20px;
 
   p,
   ul {
@@ -32,13 +33,15 @@
     list-style: none;
 
     li {
-      padding-left: 20px;
+      position: relative;
+      padding-left: 36px;
       font-size: 14px;
     }
 
     li:before {
+      position: absolute;
+      left: 16px;
       content: "\2022";
-      padding-right: 14px;
       color: $lg-red;
     }
   }

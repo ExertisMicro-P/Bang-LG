@@ -1,9 +1,9 @@
-<div id="{{id}}" class="grid_25 fade-in product product--wearable">
+<div id="{{id}}" class="product product--wearable">
   <div class="product__details">
-    <h2 class="product__title">
+    <h3 class="product__title">
       <img src="{{title.image}}" alt="{{{title.text}}}"/>
-    </h2>
-    <h3 class="product__tagline">{{{tagline}}}</h3>
+    </h3>
+    <h4 class="product__tagline">{{{tagline}}}</h4>
     <p class="product__desc">{{{description}}}</p>
     <ul class="product__attrs">
       {{#each attributes}}
@@ -12,7 +12,7 @@
     </ul>
     {{#if colours}}
       <div class="available-colours">
-        <h3>Available colours</h3>
+        <h4 class="available-colours__title">Colour options</h4>
         <ul class="available-colours__swatches">
           {{#each colours}}
             <li class="available-colours__swatch available-colours__swatch--{{slugify .}}">
