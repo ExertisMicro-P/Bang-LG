@@ -1,7 +1,7 @@
 <div class="homepage grid_25 alpha omega">
 
   <div class="promo-slider">
-    <ul class="bxslider">
+    <ul class="promo-slider__slides js-promo-slider">
       
         <li class="promo-slide">
           <div class="promo-slide__details">
@@ -107,7 +107,7 @@
               <img src="images/titles/G2Heading.png" alt="LG G2"/>
             </h2>
             <div class="promo-slide__body"><p>The LG G2 is a true powerhouse smartphone that delivers greater speed in a sophisticated, slim line design. With a unique rear key button that allows you to control the phone in its most intuitive way, plus a near zero bezel and full HD IPS display, the G2 demonstrates premium design sophistication at its very best.</p></div>
-            <div class="promo-slide__tagline"><span>Learning</br> From</br> You</span></div>
+            <div class="promo-slide__tagline"><span>Learning From You</span></div>
             <a class="lg-button" data-target-content="handsets#g2" href="#">Find out more</a>
           </div>
           <div class="promo-slide__image">
@@ -188,7 +188,7 @@
 
 function initPage() {
   head.load(prefixURL + "js/jquery.bxslider.js", function () {
-    $('.bxslider').bxSlider();
+    $('.js-promo-slider').bxSlider();
   });
 }
 

@@ -1,38 +1,51 @@
-<div class="comparison-table grid_25 alpha omega">
+<div class="compare grid_25 alpha omega">
+
+  <div class="page-title">
+    <h2 class="h1">Compare</h2>
+  </div>
+
+  <div class="page-lead">
+    <div class="page-lead__details">
+      <p>Drag the images for a side by side comparison.</p>
+    </div>
+  </div>
 
   {{!-- this really needs to be refactored into an html table when we have the
   time - Tom --}}
-  <div class="js-comparison-slider">
-    {{#each compare.products}}
-      <div class="drag comparison-table__product">
-        <div class="comparison-table__handle">
-          <div class="comparision-table__product-image">
-            <img alt="Image of {{title}}" title="Drag to compare" src="{{image}}" />
-          </div>
-          <h2 class="comparision-table__product-title">{{title}}</h2>
-        </div>
-        {{#each attributes}}
-          <p class="comparision-table__product-attribute comparision-table__product-attribute--{{@key}}">
-            {{{this}}}
-          </p>
-        {{/each}}
-      </div>
-    {{/each}}
-  </div>
+  <div class="comparison-table">
 
-  <h3 class="comparison-table__attribute" style="top:165px;">Screen</h3>
-  <h3 class="comparison-table__attribute" style="top:315px;">Battery</h3>
-  <h3 class="comparison-table__attribute" style="top:450px;">Processor</h3>
-  <h3 class="comparison-table__attribute" style="top:630px;">Camera</h3>
-  <h3 class="comparison-table__attribute" style="top:790px;">OS</h3>
-  <h3 class="comparison-table__attribute" style="top:905px;">Memory</h3>
-  <h3 class="comparison-table__attribute" style="top:1040px;">Network</h3>
-  <h3 class="comparison-table__attribute" style="top:1330px;">Connectivity</h3>
-  <h3 class="comparison-table__attribute" style="top:1435px;">Dimensions</h3>
-  <h3 class="comparison-table__attribute" style="top:1550px;">Sensors</h3>
-  <h3 class="comparison-table__attribute" style="top:1730px;">Messaging</h3>
-  <h3 class="comparison-table__attribute" style="top:1855px;">Music</h3>
-  <h3 class="comparison-table__attribute" style="top:1980px;">Other Features</h3>
+    <div class="js-comparison-table">
+      {{#each compare.products}}
+        <div class="drag comparison-table__product">
+          <div class="comparison-table__handle">
+            <div class="comparision-table__product-image">
+              <img alt="Image of {{title}}" title="Drag to compare" src="{{image}}" />
+            </div>
+            <h3 class="comparision-table__product-title">{{title}}</h3>
+          </div>
+          {{#each attributes}}
+            <p class="comparision-table__product-attribute comparision-table__product-attribute--{{@key}}">
+              {{{this}}}
+            </p>
+          {{/each}}
+        </div>
+      {{/each}}
+    </div>
+
+    <h4 class="comparison-table__attribute" style="top:155px;">Screen</h4>
+    <h4 class="comparison-table__attribute" style="top:305px;">Battery</h4>
+    <h4 class="comparison-table__attribute" style="top:440px;">Processor</h4>
+    <h4 class="comparison-table__attribute" style="top:610px;">Camera</h4>
+    <h4 class="comparison-table__attribute" style="top:780px;">OS</h4>
+    <h4 class="comparison-table__attribute" style="top:895px;">Memory</h4>
+    <h4 class="comparison-table__attribute" style="top:1065px;">Network</h4>
+    <h4 class="comparison-table__attribute" style="top:1290px;">Connectivity</h4>
+    <h4 class="comparison-table__attribute" style="top:1620px;">Dimensions</h4>
+    <h4 class="comparison-table__attribute" style="top:1735px;">Sensors</h4>
+    <h4 class="comparison-table__attribute" style="top:1905px;">Messaging</h4>
+    <h4 class="comparison-table__attribute" style="top:2040px;">Music</h4>
+    <h4 class="comparison-table__attribute" style="top:2160px;">Other Features</h4>
+  </div>
 
 </div>
 
@@ -49,8 +62,8 @@ function initPage() {
       // default to 0 if no start position provided
       startPosition = typeof startPosition !== 'undefined' ? startPosition : 0;
 
-      return $('.js-comparison-slider').bxSlider({
-        speed: 400,
+      return $('.js-comparison-table').bxSlider({
+        speed: 200,
         infiniteLoop: false,
         hideControlOnEnd: true,
         pager: false,
@@ -62,10 +75,11 @@ function initPage() {
       });
     };
 
-    $(".js-comparison-slider" ).sortable({
+    $(".js-comparison-table" ).sortable({
       axis: "x",
       opacity: 0.5,
       tolerance: "pointer",
+      scroll: false,
       placeholder: "comparison-table__drag-placeholder",
       handle: '.comparison-table__handle',
       update: function (e, ui) {

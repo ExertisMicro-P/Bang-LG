@@ -5,6 +5,11 @@
   background: linear-gradient(to bottom, #ededed 0%, #ededed 70%, #a7a7a7 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#a7a7a7', GradientType=0); // IE6-9
 
+  .promo-slider__slides {
+    padding: 0;
+    margin: 0;
+  }
+
   // slider theme
   .bx-wrapper {
     padding: 0;
@@ -14,11 +19,6 @@
       border: none;
       background: none;
       box-shadow: none;
-    }
-
-    .bxslider {
-      padding: 0;
-      margin: 0;
     }
 
     .bx-loading {

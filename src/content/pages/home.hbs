@@ -1,7 +1,7 @@
 <div class="homepage grid_25 alpha omega">
 
   <div class="promo-slider">
-    <ul class="bxslider">
+    <ul class="promo-slider__slides js-promo-slider">
       {{#each home.slides}}
         <li class="promo-slide">
           <div class="promo-slide__details">
@@ -42,7 +42,7 @@
 
 function initPage() {
   head.load(prefixURL + "js/jquery.bxslider.js", function () {
-    $('.bxslider').bxSlider();
+    $('.js-promo-slider').bxSlider();
   });
 }
 
