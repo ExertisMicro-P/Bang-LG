@@ -15,6 +15,7 @@ Bang's test site: [http://lg.microp.bang-on.net/?project=lg](http://lg.microp.ba
 * [grunt](http://gruntjs.com/installing-grunt) (and node)
 * [bundler](http://bundler.io/) (and ruby)
 * [Editorconfig](https://github.com/sindresorhus/editorconfig-sublime) sublime plugin
+* [Handlebars](https://github.com/daaain/Handlebars) sublime plugin
 
 You'll also want the [livereload browser extension](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions).
 
