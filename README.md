@@ -5,9 +5,8 @@ This project is based on the [Bang-Conect](https://github.com/ExertisMicro-P/Ban
 Bang's test site: [http://lg.microp.bang-on.net/?project=lg](http://lg.microp.bang-on.net/?project=lg)
 
 ## TODO
-* Move inline styling into SCSS modules.
-* Move styles from [_shame.scss](./src/scss/_shame.scss) to abstracted modules.
-* Make better use of [bake](https://github.com/MathiasPaumgarten/grunt-bake) templating to DRY up the markup.
+* Refactor comparison table markup so that we don't have to manually position headings when content changes.
+* Can we abstract `home-section`, `product`, `b2b-section` & `news-story` modules into a single `box` module with variant(s)?
 
 ## Getting started
 
@@ -37,6 +36,11 @@ Install the ruby gems:
 bundle install
 ```
 
+Generate the `newer` cache (this will take a minute or two).
+```sh
+grunt newer:imagemin
+```
+
 ## Development
 
 **You should not be changing anything in the [multi-page](multi-page) or [lg](lg) directories directly.**
@@ -54,19 +58,8 @@ Running or `grunt` or `grunt watch` will listen for changes and do partial recom
 * `grunt` - alias for `grunt watch` & `grunt server`
 * `grunt watch` - watch the `src` directory for changes
 * `grunt server` - run a local webserver and open a browser tab
-* `grunt imagemin` - optimise images (this is slow, so is **not included** in `grunt build` by default)
 * `grunt build` - compile the `lg` microsite
 * `grunt rebuild` - wipe the `lg` microsite before building (updates the `micro-site` framework).
-
-### Adding and updating images
-
-The `grunt imagemin` task losslessly optimises all of the images in the [src/images](src/images) directory. This is a slow operation and therefore not included as part of `grunt build` by default.
-
-**If you add or update an image you need to manually run this operation before committing:**
-
-```sh
-grunt imagemin && grunt build
-```
 
 ## Updating the multi-page framework
 
