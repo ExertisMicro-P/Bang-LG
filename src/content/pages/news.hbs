@@ -18,7 +18,7 @@
               <iframe width="580" height="315" src="{{media.src}}" frameborder="0" allowfullscreen></iframe>
             {{/ifCond}}
           </div>
-          <div class="news-story__body">
+          <div class="news-story__body js-read-more">
             {{{body}}}
           </div>
         </div>
@@ -45,6 +45,18 @@
 <!-- scripts -->
 <script type="text/javascript">
 
-function initPage() {}
+function initPage() {
+
+  head.load(prefixURL + "js/jquery.readmore.js", function () {
+    $('.js-read-more').readmore({
+      embedCSS: false,
+      toggleClass: 'read-more__toggle',
+      sectionClass: 'read-more__section',
+      expandedClass: 'read-more__section--expanded',
+      collapsedClass: 'read-more__section--collapsed'
+    });
+  });
+
+}
 
 </script>
