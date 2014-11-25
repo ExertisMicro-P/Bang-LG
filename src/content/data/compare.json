@@ -11,12 +11,12 @@
         "android": "Android 4.4 KitKat",
         "memory": "External: 64 GB, Internal: 8GB",
         "network": "GSM 850 / 900 / 1800 / 1900, HSDPA 850 / 900 / 1900 / 2100 - D722, LTE 800 / 1800 / 2600 (Bands 3, 7, 20) - D722",
-        "connectivity": "?",
+        "connectivity": "Bluetooth 4.0, Wi-Fi 802.11 b/g/n, DLNA, USB 2.0 HS, IR port",
         "dimensions": "137.7 x 69.6 x 10.3 mm",
         "sensors": "Accelerometer, Proximity, Compass",
         "messaging": "SMS (threaded view), MMS, Email, Push email, IM, RSS",
         "music": "MP3 player FM radio",
-        "other-features": "?"
+        "other-features": "KnockOn / KnockCode&trade;, Laser Auto Focus, Smart Keyboard, Quick Memo+, Touch & Shoot Camera, Gesture Shot, Expandable memory (MicroSD card slot)"
       }
     },
     {
@@ -30,7 +30,7 @@
         "android": "Android 4.4 KitKat",
         "memory": "External: 32 GB, Internal: 4GB",
         "network": "GSM - Quad Band (850 / 900 / 1800 / 1900), UMTS - Tri Band (W850 / W900 / W2100), HSDPA 21Mbps",
-        "connectivity": "?",
+        "connectivity": "Bluetooth 4.0, WiFi 802.11 b/g/n, DLNA, USB 2.0",
         "dimensions": "127.5 x 67.9 x 10.6 mm",
         "sensors": "Accelerometer, Proximity",
         "messaging": "SMS (threaded view), MMS, Email, Push email, IM, RSS",
@@ -48,7 +48,7 @@
         "camera": "None",
         "android": "Android Wear (Compatible with Android 4.3+)",
         "memory": "512 MB / 4 GB",
-        "network": "BT 4.0",
+        "network": null,
         "connectivity": null,
         "dimensions": "37.9 x 46.5 x 9.95 mm",
         "sensors": "9 Axis (Gyro, Accelerometer, Compass)",
@@ -67,7 +67,7 @@
         "camera": "None",
         "android": "Android Wear",
         "memory": "4GB eMMC / 512MB RAM",
-        "network": "BT 4.0",
+        "network": null,
         "connectivity": null,
         "dimensions": "46.4 x 53.6 x 9.7 mm",
         "sensors": "9-Axis (Gyro, Accelerometer, Compass)",
