@@ -9,7 +9,7 @@
     
       <div class="news-story">
         <div class="news-story__details">
-          <h3 class="news-story__title">LG G Watch R</h3>
+          <h3 class="news-story__title">New Benchmark for Wearables</h3>
           <div class="news-story__media">
             
               <img alt="" src="images/news/GWatchR.png" />
@@ -17,7 +17,7 @@
             
           </div>
           <div class="news-story__body js-read-more">
-            <p>Smart Comes Full Circle</p><p>With Android Wear&trade; at its core, the LG G Watch R is the next generation to join the LG wearable's range. Sporting a stunning full circle Plastic OLED display, the LG G Watch R perfectly combines classic watch design with an advanced, easy to use, user interface. Delivering essential information, anytime, anywhere.</p><ul><li>Stunning, Timeless Design</li><li>World's First Full Circle 1.3" P-OLED Display with sapphire glass protection</li><li>Compatible with Android 4.3+</li><li>High capacity 410mAh battery</li><li>1.2 GHz Qualcomm&reg; Snapdragon&trade; 400</li><li>IP67 Certified water & dust resistant</li><li>Heart Rate Monitor / Barometer / 9-Axis Sensor</li><li>Chronograph Watch Faces</li><li>Smart Notifications and Voice Recognitio</li></ul>
+            <p>The LG G Watch R made its world debut at IFA 2014 to much interest and with its stylish looks and smooth, speedy performance, became one of the show's most mentioned new products. The world's first watch-style wearable to feature a fully circular Plastic OLED (P-OLED) display, the G Watch R was inspired by classical and premium timepieces.</p><p>The 1.3-inch circular P-OLED display takes advantage of every pixel, producing images with stunning colour and accurate viewing at all angles, even under bright sunlight.</p><p>Designed and built to last, the LG G Watch R features a classic design encased in durable stainless steel and aluminium powered by a 410mAh battery, the largest in an Android Wearable to date. Like the original LG G Watch, the G Watch R delivers optimal performance through its powerful but efficient 1.2GHz Qualcomm&reg; Snapdragon&trade; 400 processor with 4GB of storage and 512MB of RAM.</p><p>With an Ingress Protection rating of IP67, the device is completely protected from dust and water resistant for up to 30 minutes at a maximum depth of one metre. The G Watch R, designed with personalisation in mind, is compatible with any 22mm wide watch strap.</p><p>The LG G Watch R offers six new pre-loaded watch faces and improved power savings in ambient mode. The update to Android WearTM OS will add even more features and functionality to G Watch R, such as offline music playback. Updates will be performed seamlessly through the smartphone with the owner's permission.</p><p>"While the original G Watch was designed to be a no-nonsense, pure Android Wear device, the G Watch R was developed with a more aesthetic eye," said Dr. Jong-seok Park, president and CEO of the LG Electronics Mobile Communications Company. "The G Watch R represents LG's commitment to meld form and functionality together in perfect harmony and to create a device that not only looks great, but more importantly, offers technology that makes life more convenient."</p><p>For more product images and videos, please visit <a href='http://www.lg.com/uk/gwatchr'>www.lg.com/uk/gwatchr</a></p><p><strong>Key Specifications:</strong></p><ul><li>Chipset: 1.2GHz Qualcomm&reg; Snapdragon&trade; 400M</li><li>Display: 1.3-inch P-OLED Display (320 x 320)M</li><li>Memory: 4GB eMMC / 512MB RAMM</li><li>Battery: 410mAhM</li><li>Operating System: Android Wear&trade; (compatible with smartphones running Android 4.3 and above)M</li><li>Sensors: 9-Axis (Gyro / Accelerometer / Compass) Barometer PPG (Heart Rate Monitor)M</li><li>Colour: BlackM</li><li>Other: Dust and Water Resistant (IP67)M</li></ul>
           </div>
         </div>
       </div>
@@ -133,6 +133,8 @@ function initPage() {
 
   head.load(prefixURL + "js/jquery.readmore.js", function () {
     $('.js-read-more').readmore({
+      maxHeight: 140,
+      heightMargin: 260,
       embedCSS: false,
       toggleClass: 'read-more__toggle',
       sectionClass: 'read-more__section',

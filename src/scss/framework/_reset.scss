@@ -30,8 +30,13 @@
 
   p,
   ul,
-  ol {
+  ol,
+  dl {
     font-size: 14px;
     color: $body-text;
+  }
+
+  strong {
+    font-weight: bold;
   }
 }
