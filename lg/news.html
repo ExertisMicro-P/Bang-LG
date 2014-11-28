@@ -32,7 +32,7 @@
             
           </div>
           <div class="news-story__body js-read-more">
-            <p>Premium Compact with True to Life Display</p><p>Enjoy super fast 4G speeds like never before with the LG F60. With a 5.0" true to life HD IPS display and an advanced 8MP camera with Laser Auto Focus, LG G3 S combines best-in-class technology all within a sleek, compact, metallic design. Plus, powered by a long lasting 2540mAh removable battery, you can stay connected all day long.</p><ul><li>High Speed 4G LTE Connectivity</li><li>4.5" WVGA In-Cell Display</li><li>Android 4.4 KitKat </li><li>Long lasting 2100mAh removable battery</li><li>1.2GHz Quad-Core processor</li><li>Hassle Free Selfies with Gesture Control</li><li>Touch & Shoot Camera</li><li>KnockOn and KnockCode&trade;</li></ul>
+            <p>Premium Compact with True to Life Display</p><p>Enjoy super fast 4G speeds like never before with the LG F60. With a 5.0" true to life HD IPS display and an advanced 8MP camera with Laser Auto Focus, LG G3 S combines best-in-class technology all within a sleek, compact, metallic design. Plus, powered by a long lasting 2540mAh removable battery, you can stay connected all day long.</p><ul><li>High Speed 4G LTE Connectivity</li><li>4.5" WVGA In-Cell Display</li><li>Android 4.4 KitKat </li><li>Long lasting 2100mAh removable battery</li><li>1.2GHz Quad-Core processor</li><li>Hassle Free Selfies with Gesture Control</li><li>Touch & Shoot Camera</li><li>KnockOn and KnockCode&trade;</li></ul><p>Read the <a class="js-local-download" data-file-name="LG G3 S Reviewer's guide.pdf" href="">LG G3 S Reviewer's guide</a> to learn more.</p>
           </div>
         </div>
       </div>
@@ -141,6 +141,11 @@ function initPage() {
       expandedClass: 'read-more__section--expanded',
       collapsedClass: 'read-more__section--collapsed'
     });
+  });
+
+  // prefix any local download URLs
+  $('.js-local-download').each(function () {
+    $(this).attr('href', prefixURL + 'downloads/' + $(this).data('file-name'));
   });
 
 }

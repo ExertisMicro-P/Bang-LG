@@ -59,6 +59,11 @@ function initPage() {
     });
   });
 
+  // prefix any local download URLs
+  $('.js-local-download').each(function () {
+    $(this).attr('href', prefixURL + 'downloads/' + $(this).data('file-name'));
+  });
+
 }
 
 </script>
