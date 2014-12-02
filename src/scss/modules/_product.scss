@@ -11,12 +11,12 @@
   &:nth-child(even) {
     background: $section-background;
 
-    > .product__details {
+    > .product__main {
       float: right;
       margin-right: 40px;
       margin-left: 0;
     }
-    .product__image {
+    .product__aside {
       float: right;
     }
     > .product__features {
@@ -27,7 +27,7 @@
   }
 }
 
-.product__details {
+.product__main {
   float: left;
   width: 480px;
   margin-left: 40px;
@@ -60,20 +60,25 @@
     position: relative;
     padding-left: 36px;
     font-size: 14px;
-  }
 
-  li:before {
-    position: absolute;
-    left: 16px;
-    content: "\2022";
-    color: $lg-red;
+    &:before {
+      position: absolute;
+      left: 16px;
+      content: "\2022";
+      color: $lg-red;
+    }
   }
 }
 
-.product__image {
+.product__aside {
   float: left;
   width: 390px;
   margin: 0 40px;
+}
+
+.product__image {
+  max-width: 100%;
+  height: auto;
 }
 
 .product__features {
@@ -84,10 +89,10 @@
   background: #e9e9e9; // fallback for older browsers
   background: linear-gradient(to bottom, #e9e9e9 0%, #e9e9e9 54%, #c9c9c9 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#c9c9c9', GradientType=0); // IE6-9
+}
 
-  img {
-    padding: 10px;
-    height: 42px;
-    width: auto;
-  }
+.product__feature {
+  padding: 10px;
+  height: 42px;
+  width: auto;
 }

@@ -1,7 +1,6 @@
 // there's a lot of !important going on in here, but it's neccessary to override
 // the highly specified selectors for #ms-nav & .nav in the multi-page framework 
 
-
 .nav,
 .nav.sticky-nav { // .sticky-nav is a multi-page thing that we don't want
   position: relative !important;

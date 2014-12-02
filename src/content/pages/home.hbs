@@ -4,7 +4,7 @@
     <ul class="promo-slider__slides js-promo-slider">
       {{#each home.slides}}
         <li class="promo-slide">
-          <div class="promo-slide__details">
+          <div class="promo-slide__main">
             <h2 class="promo-slide__title">
               <img src="{{title.image}}" alt="{{{title.text}}}"/>
             </h2>
@@ -12,8 +12,8 @@
             <div class="promo-slide__tagline"><span>{{{tagline}}}</span></div>
             <a class="lg-button" data-target-content="{{internal_link}}" href="#">Find out more</a>
           </div>
-          <div class="promo-slide__image">
-            <img src="{{image}}" alt="Image of {{title}}" />
+          <div class="promo-slide__aside">
+            <img class="promo-slide__image" src="{{image}}" alt="Image of {{title}}" />
           </div>
         </li>
       {{/each}}
@@ -22,13 +22,13 @@
 
   {{#each home.sections}}
     <div class="home-section section">
-      <div class="home-section__details">
+      <div class="home-section__main">
         <h2 class="home-section__title">{{title}}</h2>
         <div class="home-section__body">{{{body}}}</div>
         <a class="lg-button" data-target-content="{{internal_link}}" href="#">Find out more</a>
       </div>
-      <div class="home-section__image">
-        <img src="{{image.src}}" alt="{{image.alt}}" />
+      <div class="home-section__aside">
+        <img class="home-section__image" src="{{image.src}}" alt="{{image.alt}}" />
       </div>
       <div class="home-section__tagline"><span>{{{tagline}}}</span></div>
     </div>

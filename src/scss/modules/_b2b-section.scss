@@ -8,18 +8,18 @@
   &:nth-child(even) {
     background: #dcd9d9;
 
-    > .b2b-section__details {
+    > .b2b-section__main {
       float: right;
       margin-right: 40px;
       margin-left: 0;
     }
-    > .b2b-section__image {
+    > .b2b-section__aside {
       float: right;
     }
   }
 }
 
-.b2b-section__details {
+.b2b-section__main {
   float: left;
   width: 480px;
   margin-left: 40px;
@@ -50,12 +50,13 @@
   }
 }
 
-.b2b-section__image {
+.b2b-section__aside {
   float: left;
   width: 390px;
   margin: 0 40px;
+}
 
-  img {
-    max-width: 100%;
-  }
+.b2b-section__image {
+  max-width: 100%;
+  height: auto;
 }

@@ -9,12 +9,12 @@
   &:nth-child(odd) {
     background: #f1f1f1;
 
-    > .home-section__details {
+    > .home-section__main {
       float: right;
       margin-right: 40px;
       margin-left: 0;
     }
-    > .home-section__image {
+    > .home-section__aside {
       float: right;
     }
     > .home-section__tagline {
@@ -23,7 +23,7 @@
   }
 }
 
-.home-section__details {
+.home-section__main {
   position: relative;
   float: left;
   width: 480px;
@@ -49,15 +49,16 @@
   }
 }
 
-.home-section__image {
+.home-section__aside {
   float: left;
   width: 390px;
   margin: 0 40px;
+  text-align: center;
+}
 
-  img {
-    max-width: 100%;
-    margin: 0 auto;
-  }
+.home-section__image {
+  max-width: 100%;
+  height: auto;
 }
 
 // off canvas red circle looking thing

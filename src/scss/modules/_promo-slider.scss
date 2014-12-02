@@ -49,21 +49,22 @@
   min-height: 410px;
 }
 
-.promo-slide__details {
+.promo-slide__main {
   float: right;
   width: 330px;
   margin-right: 190px;
 }
 
-.promo-slide__image {
+.promo-slide__aside {
   float: right;
   width: 370px;
   margin-right: 40px;
+}
 
-  img {
-    margin: 0 auto;
-    max-width: 100%;
-  }
+.promo-slide__image {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .promo-slide__title {

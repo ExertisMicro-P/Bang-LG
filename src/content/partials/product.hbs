@@ -1,5 +1,5 @@
-<div id="{{id}}" class="product product--wearable">
-  <div class="product__details">
+<div id="{{id}}" class="product">
+  <div class="product__main">
     <h3 class="product__title">
       <img src="{{title.image}}" alt="{{{title.text}}}"/>
     </h3>
@@ -15,7 +15,7 @@
         <h4 class="available-colours__title">Colour options</h4>
         <ul class="available-colours__swatches">
           {{#each colours}}
-            <li class="available-colours__swatch available-colours__swatch--{{slugify .}}">
+            <li class="available-colours__swatch available-colours__swatch--{{slugify this}}">
               <span>{{.}}</span>
             </li>
           {{/each}}
@@ -29,12 +29,12 @@
       <a class="lg-button js-youtube-lightbox" href="{{video}}">Watch the video</a>
     {{/if}}
   </div>
-  <div class="product__image">
-    <img src="{{image}}" alt="Image of {{{title.text}}}"/>
+  <div class="product__aside">
+    <img class="product__image" src="{{image}}" alt="Image of {{{title.text}}}"/>
   </div>
   <div class="product__features">
     {{#features feature_ids features}}
-      <img src="{{image}}" alt="{{text}}"/>
+      <img class="product__feature" src="{{image}}" alt="{{text}}"/>
     {{/features}}
   </div>
 </div>

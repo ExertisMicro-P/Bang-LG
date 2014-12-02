@@ -5,14 +5,14 @@
   </div>
 
   <div class="page-lead">
-    <div class="page-lead__details">
+    <div class="page-lead__main">
       <p>Whether you want to get your hands on some of the world's most innovative Android mobile devices, experience ground-breaking technology, or opt for a more entry level product, LG offers a complete range that is easily customisable and delivers on design, performance, and user experience.</p>
       <p class="page-lead__tagline">Smart and Reliable Solutions</p>
       <div class="document-download">
-        <div class="document-download__image">
-          <img src="images/b2b/brochure.png" alt="LG Mobile Business Guide 2014" />
+        <div class="document-download__aside">
+          <img class="document-download__image" src="images/b2b/brochure.png" alt="LG Mobile Business Guide 2014" />
         </div>
-        <div class="document-download__details">
+        <div class="document-download__main">
           <h3 class="document-download__title">LG B2B Brochure</h3>
           <div class="document-download__desc">Find out how businesses  can be more productive, secure and in control using LG Technology by downloading our free 'LG Mobile Business Guide' brochure.</div>
           <a class="lg-button" href="http://content.yudu.com/A2urza/ExertisLGMobBus2014/resources/index.htm?referrerUrl=http%3A%2F%2Fwww.exertismicro-p.co.uk%2FcmcPage.asp%3FidPage%3D27521">Download</a>
@@ -23,13 +23,13 @@
 
   {{#each b2b.sections}}
     <div class="b2b-section">
-      <div class="b2b-section__details">
+      <div class="b2b-section__main">
         <h3 class="b2b-section__title">{{title}}</h3>
         <div class="b2b-section__body">{{{body}}}</div>
         <p class="b2b-section__tagline">{{tagline}}</p>
       </div>
-      <div class="b2b-section__image">
-        <img alt="{{image.alt}}" src="{{image.src}}" />
+      <div class="b2b-section__aside">
+        <img class="b2b-section__image" alt="{{image.alt}}" src="{{image.src}}" />
       </div>
     </div>
   {{/each}}
