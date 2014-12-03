@@ -5,7 +5,7 @@
   </div>
   
   
-    <div id="gpad7" class="product">
+    <div id="gpad7" class="product js-scrolling-reveal">
 
   <div class="product__main">
 
@@ -91,7 +91,7 @@
 </div>
 
   
-    <div id="gpad10" class="product">
+    <div id="gpad10" class="product js-scrolling-reveal">
 
   <div class="product__main">
 
@@ -177,7 +177,7 @@
 </div>
 
   
-    <div id="gpad8" class="product">
+    <div id="gpad8" class="product js-scrolling-reveal">
 
   <div class="product__main">
 
@@ -290,6 +290,11 @@ function initPage() {
       return false;
     });
 
+  });
+
+  // performance optimised fade in for products as user scrolls
+  head.load(prefixURL + "js/scrolling-reveal.jquery.js", function() {
+    $('.js-scrolling-reveal').scrollingReveal();
   });
 }
 

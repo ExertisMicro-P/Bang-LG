@@ -5,7 +5,7 @@
   </div>
   
   
-    <div id="gwatch" class="product">
+    <div id="gwatch" class="product js-scrolling-reveal">
 
   <div class="product__main">
 
@@ -83,7 +83,7 @@
 </div>
 
   
-    <div id="gwatchr" class="product">
+    <div id="gwatchr" class="product js-scrolling-reveal">
 
   <div class="product__main">
 
@@ -196,6 +196,11 @@ function initPage() {
       return false;
     });
 
+  });
+
+  // performance optimised fade in for products as user scrolls
+  head.load(prefixURL + "js/scrolling-reveal.jquery.js", function() {
+    $('.js-scrolling-reveal').scrollingReveal();
   });
 }
 

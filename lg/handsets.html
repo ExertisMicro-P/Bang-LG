@@ -5,7 +5,7 @@
   </div>
   
   
-    <div id="g3" class="product">
+    <div id="g3" class="product js-scrolling-reveal">
 
   <div class="product__main">
 
@@ -91,7 +91,7 @@
 </div>
 
   
-    <div id="g3s" class="product">
+    <div id="g3s" class="product js-scrolling-reveal">
 
   <div class="product__main">
 
@@ -175,7 +175,7 @@
 </div>
 
   
-    <div id="f60" class="product">
+    <div id="f60" class="product js-scrolling-reveal">
 
   <div class="product__main">
 
@@ -236,7 +236,7 @@
 </div>
 
   
-    <div id="gflex" class="product">
+    <div id="gflex" class="product js-scrolling-reveal">
 
   <div class="product__main">
 
@@ -299,7 +299,7 @@
 </div>
 
   
-    <div id="g2" class="product">
+    <div id="g2" class="product js-scrolling-reveal">
 
   <div class="product__main">
 
@@ -387,7 +387,7 @@
 </div>
 
   
-    <div id="g2mini" class="product">
+    <div id="g2mini" class="product js-scrolling-reveal">
 
   <div class="product__main">
 
@@ -475,7 +475,7 @@
 </div>
 
   
-    <div id="optimusl7" class="product">
+    <div id="optimusl7" class="product js-scrolling-reveal">
 
   <div class="product__main">
 
@@ -555,7 +555,7 @@
 </div>
 
   
-    <div id="optimusl5" class="product">
+    <div id="optimusl5" class="product js-scrolling-reveal">
 
   <div class="product__main">
 
@@ -635,7 +635,7 @@
 </div>
 
   
-    <div id="optimusl3" class="product">
+    <div id="optimusl3" class="product js-scrolling-reveal">
 
   <div class="product__main">
 
@@ -715,7 +715,7 @@
 </div>
 
   
-    <div id="nexus5" class="product">
+    <div id="nexus5" class="product js-scrolling-reveal">
 
   <div class="product__main">
 
@@ -822,6 +822,11 @@ function initPage() {
       return false;
     });
 
+  });
+
+  // performance optimised fade in for products as user scrolls
+  head.load(prefixURL + "js/scrolling-reveal.jquery.js", function() {
+    $('.js-scrolling-reveal').scrollingReveal();
   });
 }
 
