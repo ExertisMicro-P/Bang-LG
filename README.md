@@ -7,6 +7,8 @@ Bang's test site: [http://lg.microp.bang-on.net/?project=lg](http://lg.microp.ba
 ## TODO
 * Refactor comparison table markup so that we don't have to manually position headings when content changes.
 * Can we abstract `home-section`, `product`, `b2b-section` & `news-story` modules into a single `box` module with variant(s)?
+* Better workflow for `src/js`. Ideally we want to concatenate and minify for `grunt build`, but use full fat (un-minified) versions when developing with `grunt watch` for easier debugging.
+* Add linting task to grunt for our custom scripts in `src/js`
 
 ## Getting started
 
