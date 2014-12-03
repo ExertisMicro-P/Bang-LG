@@ -1,24 +1,5 @@
 $swatch_diameter: 14px;
 
-@mixin swatch($pri_colour, $secondary_colour: '') {
-  background-color: $pri_colour;
-
-  @if $secondary_colour != '' {
-    &:after {
-      position: relative;
-      left: $swatch_diameter / 2;
-      display: block;
-      content: '';
-      height: $swatch_diameter;
-      width: $swatch_diameter / 2;
-      border-radius: 0 ($swatch_diameter / 2) ($swatch_diameter / 2) 0;
-      background-color: $secondary_colour;
-      transform-origin: 0 50%;
-      transform: rotate(45deg);
-    }
-  }
-}
-
 .available-colours {
   float: none; // for some reason all <divs> are floated? this makes life difficult.
 
@@ -47,9 +28,3 @@ $swatch_diameter: 14px;
     @extend .visuallyhidden;
   }
 }
-
-.available-colours__swatch--black  { @include swatch(#000); }
-.available-colours__swatch--white  { @include swatch(#fff); }
-.available-colours__swatch--gold   { @include swatch(#DAA520); }
-.available-colours__swatch--silver { @include swatch(#c0c0c0); }
-.available-colours__swatch--red    { @include swatch(#bd1722); }

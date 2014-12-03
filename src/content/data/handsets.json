@@ -14,10 +14,10 @@
         "Advanced OIS+ Camera",
         "Powerful 3,000mAh removable battery"
       ],
-      "colours": [
-        "Gold",
-        "Black",
-        "White"
+      "colour_options": [
+        "gold",
+        "black",
+        "white"
       ],
       "link": "http://exertismicro-p.co.uk/catalogue/catProductList.asp?mscssid=&nmOrderBy=1&ttKeyword=LG%20G3&idCategory=8057",
       "video": "http://www.youtube.com/watch?v=_btdWhwH0wE?rel=0&feature=youtu.be",
@@ -48,9 +48,9 @@
         "Touch & Shoot  Camera",
         "KnockOn and KnockCode&trade;"
       ],
-      "colours": [
-        "Black",
-        "White"
+      "colour_options": [
+        "black",
+        "white"
       ],
       "link": "http://www.exertismicro-p.co.uk/catalogue/catProductList.asp?mscssid=%7B24DC85FF-A7D8-405E-87D8-C988A90C0D48%7D&nmOrderBy=1&ttKeyword=G3%20S&flPackageOnly=0&idCategory=8057&lbCategory=ANDROID%20OS%20MOBILE%20PHONE",
       "video": null,
@@ -78,7 +78,7 @@
         "Long Lasting 2,100 mAh Battery",
         "Knock Code&trade;, Touch & Shoot"
       ],
-      "colours": [],
+      "colour_options": null,
       "link": "http://www.exertismicro-p.co.uk/catalogue/catProductList.asp?mscssid=%7B24DC85FF-A7D8-405E-87D8-C988A90C0D48%7D&nmOrderBy=1&ttKeyword=F60&flPackageOnly=0&idCategory=8057&lbCategory=ANDROID%20OS%20MOBILE%20PHONE",
       "video": null,
       "image": "images/handsets/F60.png",
@@ -105,7 +105,7 @@
         "Ergonomic Curved Design with Built in Flexibility",
         "Innovative & Intuitive rear-key"
       ],
-      "colours": [],
+      "colour_options": null,
       "link": "http://exertismicro-p.co.uk/products/ANDROID-OS-MOBILE-PHONE/LG/p2040464/LG-LG-G-Series-Android-OS-Smartphones-ANDROID-OS-MOBILE-PHONE-LGD955-AGBRTS.aspx",
       "video": "http://www.youtube.com/watch?v=ECadQWfl4_0?rel=0&feature=youtu.be",
       "image": "images/handsets/GFlex.png",
@@ -132,9 +132,9 @@
         "Android 4.4.2 KitKat",
         "Integrated, refined rear-key for intuitive usage"
       ],
-      "colours": [
-        "Black",
-        "White"
+      "colour_options": [
+        "black",
+        "white"
       ],
       "link": "http://exertismicro-p.co.uk/catalogue/catProductList.asp?mscssid=&nmOrderBy=1&ttKeyword=LG%20D802&idCategory=8057",
       "video": "https://www.youtube.com/watch?v=o97SEJgrDxg&index=33&list=PLrUOUKaX6FUC_pWWjHcl4xKZAY-usAUiy?rel=0&feature=youtu.be",
@@ -167,9 +167,9 @@
         "MicroSD card slot",
         "KnockCode, Plug and Play, Capture Plus"
       ],
-      "colours": [
-        "Black",
-        "White"
+      "colour_options": [
+        "black",
+        "white"
       ],
       "link": "http://exertismicro-p.co.uk/catalogue/catProductList.asp?mscssid=&nmOrderBy=1&ttKeyword=LG%20D620&idCategory=8057",
       "video": null,
@@ -197,10 +197,10 @@
         "8 MP Camera with LED flash",
         "Smart UX including QSlide, Quick Translate, QuickButton and Advanced QuickMemo"
       ],
-      "colours": [
-        "Black",
-        "White",
-        "Silver"
+      "colour_options": [
+        "black",
+        "white",
+        "silver"
       ],
       "link": "http://exertismicro-p.co.uk/catalogue/catProductList.asp?mscssid=&nmOrderBy=1&ttKeyword=LG%20Optimus%20P710&idCategory=8057",
       "video": null,
@@ -225,10 +225,10 @@
         "5 MP Camera with autofocus, LED flash and Geo-tagging",
         "Advanced QuickMemo, QuickButton and SafetyCare"
       ],
-      "colours": [
-        "Black",
-        "White",
-        "Silver"
+      "colour_options": [
+        "black",
+        "white",
+        "silver"
       ],
       "link": "http://exertismicro-p.co.uk/catalogue/catProductList.asp?mscssid=&nmOrderBy=1&ttKeyword=LG%20Optimus%20E460&idCategory=8057",
       "video": null,
@@ -253,10 +253,10 @@
         "3MP camera with voice activated shutter",
         "Advanced QuickMemo"
       ],
-      "colours": [
-        "Black",
-        "White",
-        "Silver"
+      "colour_options": [
+        "black",
+        "white",
+        "silver"
       ],
       "link": "http://exertismicro-p.co.uk/catalogue/catProductList.asp?mscssid=&nmOrderBy=1&ttKeyword=LG%20Optimus%20E430&idCategory=8057",
       "video": null,
@@ -281,9 +281,9 @@
         "1.3MP front facing, 8MP rear facing OIS MEMS camera",
         "2.3GHz Quad-Core Qualcomm&reg; Snapdragon&trade; 800 processor"
       ],
-      "colours": [
-        "Black",
-        "White"
+      "colour_options": [
+        "black",
+        "white"
       ],
       "link": "http://exertismicro-p.co.uk/catalogue/catProductList.asp?mscssid=&idrange=24805&range_name=LG Nexus Series Android OS Smartphones (LG)",
       "video": null,

@@ -8,14 +8,14 @@ module.exports.register = function (Handlebars, options) {
       .replace(/ +/g,'-');
   });
 
-  Handlebars.registerHelper('features', function (feature_ids, features, options) {
+  Handlebars.registerHelper('lookup', function (target_ids, dataset, options) {
     var ret = '';
 
-    feature_ids.forEach(function (feature_id) {
-      if ( ! (feature_id in features) ) {
-        throw new Error("Unrecognised feature id: " + feature_id);
+    target_ids.forEach(function (target_id) {
+      if ( ! (target_id in dataset) ) {
+        throw new Error("Unrecognised lookup id: " + target_id);
       }
-      ret += options.fn(features[feature_id]);
+      ret += options.fn(dataset[target_id]);
     });
 
     return ret;
