@@ -2,4 +2,69 @@
  * Project Name: microp-lg-microsite
  * Author: Bang
  */
-!function(a,b){"use strict";function c(b,c,f){this.el=b,this.$el=a(b),this.options=a.extend(!0,{},e,c),this.selector=f,this._defaults=e,this._name=d,this._init()}var d="scrollingReveal",e={revealAfterIndex:2,revealOffset:150,parentSelector:"div",revealSpeed:500};c.prototype._init=function(){this.$window=a(b),this.$parent=this.$el.parent().closest(this.options.parentSelector),this.index=this.$parent.find(this.selector).index(this.$el),this.index>this.options.revealAfterIndex&&(this.hide(),this.bindScrollListener())},c.prototype.scrollHandler=function(){var a=this.$el.offset().top+this.options.revealOffset,b=this.$window.scrollTop()+this.$window.height();b>a&&(this.reveal(),this.unbindScrollListener())},c.prototype.bindScrollListener=function(){this.$window.on("scroll."+this.index,this._throttle(200,a.proxy(this.scrollHandler,this)))},c.prototype.unbindScrollListener=function(){this.$window.off("scroll."+this.index,this.scrollHandler)},c.prototype.reveal=function(){this.$el.fadeTo(this.options.revealSpeed,1)},c.prototype.hide=function(){this.$el.css("opacity",0)},c.prototype._throttle=function(a,b){var c=(new Date).getTime();return function(){var d=(new Date).getTime();d-c>=a&&(c=d,b.apply(null,arguments))}},a.fn[d]=function(b){var e=this.selector;return this.each(function(){a.data(this,"plugin_"+d)||a.data(this,"plugin_"+d,new c(this,b,e))}),this}}(jQuery,window,document);
+(function($, window, document, undefined) {
+    "use strict";
+    var pluginName = "scrollingReveal", defaults = {
+        revealAfterIndex: 2,
+        revealOffset: 150,
+        parentSelector: "div",
+        revealSpeed: 500
+    };
+    function ScrollingReveal(element, options, selector) {
+        this.el = element;
+        this.$el = $(element);
+        this.options = $.extend(true, {}, defaults, options);
+        this.selector = selector;
+        this._defaults = defaults;
+        this._name = pluginName;
+        this._init();
+    }
+    ScrollingReveal.prototype._init = function() {
+        this.$window = $(window);
+        this.$parent = this.$el.parent().closest(this.options.parentSelector);
+        this.index = this.$parent.find(this.selector).index(this.$el);
+        if (this.index > this.options.revealAfterIndex) {
+            this.hide();
+            this.bindScrollListener();
+        }
+    };
+    ScrollingReveal.prototype.scrollHandler = function() {
+        var offsettedTargetElementYPos = this.$el.offset().top + this.options.revealOffset;
+        var bottomOfBrowserWindowYPos = this.$window.scrollTop() + this.$window.height();
+        if (offsettedTargetElementYPos < bottomOfBrowserWindowYPos) {
+            this.reveal();
+            this.unbindScrollListener();
+        }
+    };
+    ScrollingReveal.prototype.bindScrollListener = function() {
+        this.$window.on("scroll." + this.index, this._throttle(200, $.proxy(this.scrollHandler, this)));
+    };
+    ScrollingReveal.prototype.unbindScrollListener = function() {
+        this.$window.off("scroll." + this.index, this.scrollHandler);
+    };
+    ScrollingReveal.prototype.reveal = function() {
+        this.$el.fadeTo(this.options.revealSpeed, 1);
+    };
+    ScrollingReveal.prototype.hide = function() {
+        this.$el.css("opacity", 0);
+    };
+    ScrollingReveal.prototype._throttle = function(delay, callback) {
+        var previousCall = new Date().getTime();
+        return function() {
+            var time = new Date().getTime();
+            if (time - previousCall >= delay) {
+                previousCall = time;
+                callback.apply(null, arguments);
+            }
+        };
+    };
+    $.fn[pluginName] = function(options) {
+        var selector = this.selector;
+        this.each(function() {
+            if (!$.data(this, "plugin_" + pluginName)) {
+                $.data(this, "plugin_" + pluginName, new ScrollingReveal(this, options, selector));
+            }
+        });
+        return this;
+    };
+})(jQuery, window, document);
