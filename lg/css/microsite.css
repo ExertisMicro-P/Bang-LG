@@ -673,8 +673,7 @@ body {
 
 .lg-microsite {
   font-family: Ubuntu, Helvetica, Arial, Calibri, sans-serif;
-  background-color: #fff;
-  margin-top: 15px; }
+  background-color: #fff; }
   .lg-microsite h1, .lg-microsite .h1,
   .lg-microsite h2, .lg-microsite .h2,
   .lg-microsite h3, .lg-microsite .h3,
@@ -711,7 +710,6 @@ body {
   position: relative;
   width: 100%;
   padding: 20px 30px;
-  margin-top: -15px;
   box-sizing: border-box;
   background: #fff; }
 
